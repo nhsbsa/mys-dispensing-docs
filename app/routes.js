@@ -20,4 +20,29 @@ router.post('/fp34d/v1/vaccine-add-another', function(req,res) {
         res.redirect('/fp34d/v1/start-page')
     }
 })
+
+router.get(/influenzaOne/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('influenza-details'); // if both input values are "Yes" - redirect to 'page-name' //
+  } else {
+    res.redirect('vaccine-typhoid'); // if both input values are "Yes" - redirect to 'page-name' //
+  }
+});
+
+router.get(/influenzaTwo/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('influenza-details'); // if both input values are "Yes" - redirect to 'page-name' //
+  } else {
+    res.redirect('vaccine-typhoid'); // if both input values are "Yes" - redirect to 'page-name' //
+  }
+});
+
+router.get(/typhoidOne/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('typhoid-details'); // if both input values are "Yes" - redirect to 'page-name' //
+  } else {
+    res.redirect('vaccine-hep-a'); // if both input values are "Yes" - redirect to 'page-name' //
+  }
+});
+
 module.exports = router;

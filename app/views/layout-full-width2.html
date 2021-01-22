@@ -1,0 +1,206 @@
+<!--
+  This is the main layout where you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Extends the layout from /docs/views/template.html -->
+{% extends "template-full-width.html" %}
+
+<!-- Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+
+  <script>
+
+  // (1) show item 2
+
+    function showitem2() {
+    var x = document.getElementById("item-2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
+  //  (2) hide item 2
+
+  function hideitem2() {
+  var x = document.getElementById("item-2");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+  }
+
+  // (3) hide add another on item 1
+
+  function hideadd1() {
+    var x = document.getElementById("add-2");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
+    }
+
+  // (4) show add another on item 1
+    function showadd1() {
+      var x = document.getElementById("add-2");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "block";
+      }
+      }
+
+  // (5) show item 3
+  function showitem3() {
+  var x = document.getElementById("item-3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "block";
+  }
+  }
+
+  // (6) hide item 3
+  function hideitem3() {
+  var x = document.getElementById("item-3");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+  }
+
+  // (7) hide add another on item 1
+
+  function hideadd2() {
+    var x = document.getElementById("add-3");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
+    }
+
+  // (8) show add another on item 1
+    function showadd2() {
+      var x = document.getElementById("add-3");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "block";
+      }
+      }
+
+
+  </script>
+
+  <style>
+
+  .items {
+    display: none;
+  }
+
+  .list-item-wrapper-vertical {
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+  .list-item-wrapper-vertical input {
+  width: 80%;
+  }
+
+  .list-item-wrapper-vertical .remove-list-item-vertical {
+  margin-top: 4.4em;
+  display: block;
+  }
+
+  .list-item-wrapper-vertical .heading-medium {
+  margin-top: 0;
+  }
+
+  .button-add-another-vertical {
+  background-color: #eee;
+  color: #000;
+  box-shadow: 0 2px 0 #666;
+  }
+
+  .button-add-another-vertical:hover {
+  background-color: #ccc;
+  color: #000;
+  box-shadow: 0 2px 0 #666;
+  }
+
+  .button-add-another-vertical:focus {
+  background-color: #ccc;
+  color: #000;
+  box-shadow: 0 2px 0 #666;
+  }
+
+  @media (max-width: 640px) {
+  .list-item-wrapper-vertical inpit {
+  width: 100%;
+  }
+
+  .button-add-another-vertical {
+  width: 90%;
+  margin: auto;
+  display: block;
+  }
+  }
+
+  </style>
+
+{% endblock %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  MYS Optometry
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/header -->
+{% block header %}
+  {{ header({
+    "service": {
+        "name": "Manage Your Service",
+        "href": "/"
+      },
+      "showNav": "false",
+      "showSearch": "false",
+      "classes": "NHSBSA-full-width-header"
+    })
+  }}
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/footer -->
+{% block footer %}
+  {{ footer({
+    "links": [
+      {
+        "URL": "/",
+        "label": "Home"
+      },
+      {
+        "URL": "/page-example",
+        "label": "Example page"
+      }
+    ],
+    "classes": "NHSBSA-full-width-footer"
+  })}}
+{% endblock %}
+
+{% block bodyEnd %}
+  {% block scripts %}
+    <!-- Custom JavaScript files can be added to this file -->
+    {% include "includes/scripts.html" %}
+    <!-- For adding page specific JavsScript -->
+    {% block pageScripts %}{% endblock %}
+  {% endblock %}
+{% endblock %}
