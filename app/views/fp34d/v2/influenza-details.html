@@ -23,24 +23,19 @@
 <!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
 <div class="nhsBSA-sidebar-container">
-
   <div class="nhsBSA-sidebar-wrapper">
     <div class="nhsBSA-sidebar-content">
-      <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-        <div class="nhsuk-width-container-fluid">
-          <ol class="nhsuk-breadcrumb__list">
-            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/index">Dispensing Doctors</a></li>
-            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/level-one/level-two">FP34D Submission</a></li>
-          </ol>
-          <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/level-one/level-two/level-three">Back to Level three</a></p>
-        </div>
-      </nav>
+            <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+              <div class="nhsuk-width-container-fluid">
+                <ol class="nhsuk-breadcrumb__list">
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/index">Dispensing Doctors</a></li>
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/level-one/level-two">FP34D Submission</a></li>
+                </ol>
+                <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/level-one/level-two/level-three">Back to Level three</a></p>
+              </div>
+            </nav>
       <div class="nhsuk-width-container-fluid">
-
         <div class="nhsuk-main-wrapper" id="maincontent">
-
-
-
           <div class="nhsuk-grid-row">
             <div class="nhsuk-grid-column-two-thirds">
                                 <header class="page-header">
@@ -51,7 +46,6 @@
                                 <form action="influenza-add-another" method="get" class="form">
 
                                                       <div class="nhsuk-form-group">
-
 
                                                                                 <div class="test-case" style="overflow: visible">
                                                                                   <div>
@@ -88,39 +82,32 @@
                                                                                     </select>
                                                                                   </div>
                                                                                 </div>
-                                                                               </div>
 
-                                                                               <div class="nhsuk-form-group">
-                                                                                 <h2 class="nhsuk-heading-m">Pack</h2>
-                                                                                 <input class="nhsuk-input nhsuk-input--width-2" id="influenza-pack" name="influenza-pack" type="text">
-                                                                               </div>
+                                                      </div>
 
-                                                                               <div class="nhsuk-form-group">
-                                                                                 <h2 class="nhsuk-heading-m">Number of doses</h2>
-                                                                                 <input class="nhsuk-input nhsuk-input--width-2" id="influenza-doses" name="influenza-doses" type="text">
-                                                                               </div>
+                                                                              <div class="nhsuk-form-group">
+                                                                                <h2 class="nhsuk-heading-m">Pack</h2>
+                                                                                <input class="nhsuk-input nhsuk-input--width-2" id="influenza-pack" name="influenza-pack" type="text">
+                                                                              </div>
 
-
+                                                                              <div class="nhsuk-form-group">
+                                                                                <h2 class="nhsuk-heading-m">Number of doses</h2>
+                                                                                <input class="nhsuk-input nhsuk-input--width-2" id="influenza-doses" name="influenza-doses" type="text">
+                                                                              </div>
 
                                 <!-- Review date -->
 
                                               <div class="form-item-wrapper">
-                                                 <div class="form-group">
-                                                    <input class="nhsuk-button" type="submit" value="Continue">
-                                                 </div>
+                                                  <div class="form-group">
+                                                      <input class="nhsuk-button" type="submit" value="Continue">
+                                                  </div>
                                               </div>
-                                            </form>                        </div>
+                                  </form> 
+            </div>
           </div>
-
-
-
         </div>
-
       </div>
-
     </div>
-
   </div>
-
 </div>
 {% endblock %}
