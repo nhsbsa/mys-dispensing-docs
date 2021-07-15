@@ -63,7 +63,7 @@ router.get(/addAnotherOne/, function (req, res) {
 
 router.get(/addAnotherVaccine/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('table-dropdown'); 
+    res.redirect('table-dropdown-nothing'); 
   } else {
     res.redirect('table-summary');
   }
@@ -76,5 +76,14 @@ router.get(/addDoctor/, function (req, res) {
     res.redirect('summary-all-doctors');
   }
 });
+
+router.get(/addanotherDoctor/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('doctor-details'); 
+  } else {
+    res.redirect('summary-all-doctors');
+  }
+});
+
 
 module.exports = router;
