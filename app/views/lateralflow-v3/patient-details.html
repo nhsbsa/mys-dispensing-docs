@@ -35,14 +35,14 @@
                 </div>
                 <header class="page-header">
                   <span class="heading-secondary">Lateral Flow Test</span>
-                  <h1 class="nhsuk-heading-l govuk-heading-l">Collection details</h1>
+                  <h1 class="nhsuk-heading-l govuk-heading-l">Patient details</h1>
                 </header><!-- End of drop-down -->
                 <form action="summary"
                       class="form"
                       method="get">
                   <div class="nhsuk-form-group">
                     <h1 class="nhsuk-label-wrapper"><label class="nhsuk-label nhsuk-label--m"
-                          for="patient-full-name">Anonymous collection?</label></h1>
+                          for="patient-full-name">Anonymous collection</label></h1>
                     <div class="test-case"
                           style="overflow: visible">
                       <div>
@@ -62,6 +62,16 @@
                   </div>
                   <!-- End of drop-down -->
 
+<!-- LOT NUMBER
+                  <div class="nhsuk-form-group">
+                    <h1 class="nhsuk-label-wrapper"><label class="nhsuk-label nhsuk-label--m"
+                          for="lot-number">Lot number</label></h1><input class="nhsuk-input nhsuk-input--width-4"
+                          id="lot-number"
+                          name="lot-number"
+                          type="text">
+                  </div>
+  End of LOT NUMBER -->
+
                 <div class="nhsuk-form-group">
                   <fieldset class="nhsuk-fieldset" aria-describedby="date-of-birth-hint" role="group">
                     <legend class="nhsuk-fieldset__legend nhsuk-label--m">
@@ -79,7 +89,7 @@
                           <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="collection-code-1" name="collection-code-1" type="number" pattern="[0-9]*">
                         </div>
                       </div>
-
+                      
                       <div class="nhsuk-date-input__item">
                         <div class="nhsuk-form-group">
                           <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="collection-code-2" name="collection-code-2" type="number" pattern="[0-9]*">
@@ -131,11 +141,49 @@
                   </fieldset>
                 </div>
 
+                <div class="nhsuk-form-group">
+                  <fieldset class="nhsuk-fieldset" aria-describedby="date-of-collection-hint" role="group">
+                    <legend class="nhsuk-fieldset__legend nhsuk-label--m">
+                        <h2 class="nhsuk-fieldset__heading">
+                        Date of collection
+                        </h2>
+                    </legend>
+                    <span class="nhsuk-hint" id="date-of-collection-hint">
+                      For example, 15 3 1984
+                    </span>
 
+                    <div class="nhsuk-date-input" id="date-of-collection">
+                      <div class="nhsuk-date-input__item">
+                        <div class="nhsuk-form-group">
+                          <label class="nhsuk-label nhsuk-date-input__label" for="date-of-collection-day">
+                            Day
+                          </label>
+                          <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="date-of-collection-day" name="date-of-collection-day" type="number" pattern="[0-9]*">
+                        </div>
+                      </div>
+                      <div class="nhsuk-date-input__item">
+                        <div class="nhsuk-form-group">
+                          <label class="nhsuk-label nhsuk-date-input__label" for="date-of-collection-month">
+                            Month
+                          </label>
+                          <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="date-of-collection-month" name="date-of-collection-month" type="number" pattern="[0-9]*">
+                        </div>
+                      </div>
+                      <div class="nhsuk-date-input__item">
+                        <div class="nhsuk-form-group">
+                          <label class="nhsuk-label nhsuk-date-input__label" for="date-of-collection-year">
+                            Year
+                          </label>
+                          <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="date-of-collection-year" name="date-of-collection-year" type="number" pattern="[0-9]*">
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
 
                   <div class="nhsuk-form-group">
                     <h1 class="nhsuk-label-wrapper"><label class="nhsuk-label nhsuk-label--m"
-                            for="patient-post-code">Number of kits distributed</label></h1><input class="nhsuk-input nhsuk-input--width-3"
+                            for="patient-post-code">Number of kits</label></h1><input class="nhsuk-input nhsuk-input--width-3"
                           id="number-of-kits"
                           name="number-of-kits"
                           type="text">
