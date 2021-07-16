@@ -63,7 +63,23 @@ router.get(/addAnotherOne/, function (req, res) {
 
 router.get(/addAnotherVaccine/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('table-dropdown-nothing'); 
+    res.redirect('table-dropdown-no-records1'); 
+  } else {
+    res.redirect('table-summary');
+  }
+});
+
+router.get(/addAnotherFlu/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('table-dropdown-no-records2'); 
+  } else {
+    res.redirect('table-summary');
+  }
+});
+
+router.get(/addAnotherVaccine2/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('table-dropdown-no-records2'); 
   } else {
     res.redirect('table-summary');
   }
