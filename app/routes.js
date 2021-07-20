@@ -93,5 +93,20 @@ router.get(/addanotherDoctor/, function (req, res) {
   }
 });
 
+router.get(/addAnotherL4/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('table-grid'); // if both input values are "Yes" - redirect to 'page-name' //
+  } else {
+    res.redirect('declaration2'); // if both input values are "Yes" - redirect to 'page-name' //
+  }
+});
+
+router.get(/addAnotherLft/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('table-grid'); // if both input values are "Yes" - redirect to 'page-name' //
+  } else {
+    res.redirect('declaration2'); // if both input values are "Yes" - redirect to 'page-name' //
+  }
+});
 
 module.exports = router;
