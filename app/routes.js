@@ -95,7 +95,31 @@ router.get(/addanotherDoctor/, function (req, res) {
 
 router.get(/addAnotherL4/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('table-grid'); // if both input values are "Yes" - redirect to 'page-name' //
+    res.redirect('table-grid1'); // if both input values are "Yes" - redirect to 'page-name' //
+  } else {
+    res.redirect('declaration2'); // if both input values are "Yes" - redirect to 'page-name' //
+  }
+});
+
+router.get(/addAnotherL1/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('table-grid2'); // if both input values are "Yes" - redirect to 'page-name' //
+  } else {
+    res.redirect('declaration2'); // if both input values are "Yes" - redirect to 'page-name' //
+  }
+});
+
+router.get(/addAnotherL2/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('table-grid3'); // if both input values are "Yes" - redirect to 'page-name' //
+  } else {
+    res.redirect('declaration2'); // if both input values are "Yes" - redirect to 'page-name' //
+  }
+});
+
+router.get(/addAnotherL3/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('table-grid3'); // if both input values are "Yes" - redirect to 'page-name' //
   } else {
     res.redirect('declaration2'); // if both input values are "Yes" - redirect to 'page-name' //
   }

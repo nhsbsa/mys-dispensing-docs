@@ -115,35 +115,75 @@
                       <h2 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-label--m">Lot number(s)</legend></h2><span class="nhsuk-hint"
                                 id="date-of-birth-hint">If there are two lot numbers please enter both</span>
                       <div class="nhsuk-date-input"
-                            id="lot-number">
+                           id="lot-number">
                         <div class="nhsuk-date-input__item">
                           <div class="nhsuk-form-group">
                             <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4"
-                                id="lot-number-1"
-                                name="lot-number-1"
-                                pattern="[0-9]*"
-                                type="number">
+                                 id="lot-number-1"
+                                 name="lot-number-1"
+                                 pattern="[0-9]*"
+                                 type="number">
                           </div>
                         </div>
                         <div class="nhsuk-date-input__item">
                           <div class="nhsuk-form-group">
                             <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4"
-                                id="lot-number-2"
-                                name="lot-number-2"
-                                pattern="[0-9]*"
-                                type="number">
+                                 id="lot-number-2"
+                                 name="lot-number-2"
+                                 pattern="[0-9]*"
+                                 type="number">
                           </div>
                         </div>
                       </div>
                     </fieldset>
                   </div>
-
+                  <div class="nhsuk-form-group">
+                    <fieldset aria-describedby="date-of-collection-hint"
+                              class="nhsuk-fieldset"
+                              role="group">
+                      <h2 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-label--m">Date of collection</legend></h2><span class="nhsuk-hint"
+                                id="date-of-collection-hint">For example, 15 3 1984</span>
+                      <div class="nhsuk-date-input"
+                           id="date-of-collection">
+                        <div class="nhsuk-date-input__item">
+                          <div class="nhsuk-form-group">
+                            <label class="nhsuk-label nhsuk-date-input__label"
+                                 for="date-of-collection-day">Day</label> <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+                                 id="date-of-collection-day"
+                                 name="date-of-collection-day"
+                                 pattern="[0-9]*"
+                                 type="number">
+                          </div>
+                        </div>
+                        <div class="nhsuk-date-input__item">
+                          <div class="nhsuk-form-group">
+                            <label class="nhsuk-label nhsuk-date-input__label"
+                                 for="date-of-collection-month">Month</label> <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+                                 id="date-of-collection-month"
+                                 name="date-of-collection-month"
+                                 pattern="[0-9]*"
+                                 type="number">
+                          </div>
+                        </div>
+                        <div class="nhsuk-date-input__item">
+                          <div class="nhsuk-form-group">
+                            <label class="nhsuk-label nhsuk-date-input__label"
+                                 for="date-of-collection-year">Year</label> <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4"
+                                 id="date-of-collection-year"
+                                 name="date-of-collection-year"
+                                 pattern="[0-9]*"
+                                 type="number">
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
                   <div class="nhsuk-form-group">
                     <h1 class="nhsuk-label-wrapper"><label class="nhsuk-label nhsuk-label--m"
-                          for="patient-post-code">Number of kits</label></h1><input class="nhsuk-input nhsuk-input--width-3"
-                          id="number-of-kits"
-                          name="number-of-kits"
-                          type="text">
+                           for="patient-post-code">Number of kits</label></h1><input class="nhsuk-input nhsuk-input--width-3"
+                         id="number-of-kits"
+                         name="number-of-kits"
+                         type="text">
                   </div><br>
                   <button class="nhsuk-button"
                         type="submit">Continue</button>
