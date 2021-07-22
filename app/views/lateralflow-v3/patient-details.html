@@ -66,7 +66,7 @@
                               class="nhsuk-fieldset"
                               role="group">
                       <h2 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-label--m">Collect code</legend></h2><span class="nhsuk-hint"
-                                id="date-of-birth-hint">Enter the 16 digit code</span>
+                                id="date-of-birth-hint">Enter the 16 digit code or zeros for an anonymous collection.</span>
                       <div class="nhsuk-date-input"
                            id="collection-code">
                         <div class="nhsuk-date-input__item">
@@ -113,7 +113,7 @@
                               class="nhsuk-fieldset"
                               role="group">
                       <h2 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-label--m">Lot number(s)</legend></h2><span class="nhsuk-hint"
-                                id="date-of-birth-hint">If there are two lot numbers please enter both</span>
+                                id="date-of-birth-hint">If there are two lot numbers please enter both.</span>
                       <div class="nhsuk-date-input"
                             id="lot-number">
                         <div class="nhsuk-date-input__item">
@@ -122,7 +122,7 @@
                                 id="lot-number-1"
                                 name="lot-number-1"
                                 pattern="[0-9]*"
-                                type="number">
+                                type="text">
                           </div>
                         </div>
                         <div class="nhsuk-date-input__item">
@@ -131,7 +131,7 @@
                                 id="lot-number-2"
                                 name="lot-number-2"
                                 pattern="[0-9]*"
-                                type="number">
+                                type="text">
                           </div>
                         </div>
                       </div>
@@ -140,10 +140,10 @@
 
                   <div class="nhsuk-form-group">
                     <h1 class="nhsuk-label-wrapper"><label class="nhsuk-label nhsuk-label--m"
-                          for="patient-post-code">Number of kits</label></h1><input class="nhsuk-input nhsuk-input--width-3"
+                          for="patient-post-code">Number of packs</label></h1><input class="nhsuk-input nhsuk-input--width-3"
                           id="number-of-kits"
                           name="number-of-kits"
-                          type="text">
+                          type="number">
                   </div><br>
                   <button class="nhsuk-button"
                         type="submit">Continue</button>

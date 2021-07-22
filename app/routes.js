@@ -101,9 +101,17 @@ router.get(/addAnotherL4/, function (req, res) {
   }
 });
 
+router.get(/addAnotherL0/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('table-grid0'); // if both input values are "Yes" - redirect to 'page-name' //
+  } else {
+    res.redirect('declaration2'); // if both input values are "Yes" - redirect to 'page-name' //
+  }
+});
+
 router.get(/addAnotherL1/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('table-grid2'); // if both input values are "Yes" - redirect to 'page-name' //
+    res.redirect('table-grid1'); // if both input values are "Yes" - redirect to 'page-name' //
   } else {
     res.redirect('declaration2'); // if both input values are "Yes" - redirect to 'page-name' //
   }
@@ -111,7 +119,7 @@ router.get(/addAnotherL1/, function (req, res) {
 
 router.get(/addAnotherL2/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('table-grid3'); // if both input values are "Yes" - redirect to 'page-name' //
+    res.redirect('table-grid2'); // if both input values are "Yes" - redirect to 'page-name' //
   } else {
     res.redirect('declaration2'); // if both input values are "Yes" - redirect to 'page-name' //
   }
