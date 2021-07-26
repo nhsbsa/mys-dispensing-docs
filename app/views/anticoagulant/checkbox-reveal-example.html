@@ -12,7 +12,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  MYS Optometry
+  Oral Medicine
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -39,10 +39,16 @@
                   </svg>
                   Go back</a>
               </div>
-              <header class="page-header">
-                <span class="heading-secondary">Special School Eye Care Service</span>
-                <h1 class="nhsuk-heading-l govuk-heading-l">Consultation findings</h1>
+               <header>
+                <h1>
+                  Anticoagulant
+                </h1>
               </header>
+              <header class="page-header">
+                <span class="heading-secondary">Anticoagulant Audit</span>
+                <h1 class="nhsuk-heading-l govuk-heading-l">Oral anticoagulant medicine</h1>
+              </header>
+              <br>
               <form action="consultation-findings-page3" method="post">
 
                   <div class="nhsuk-form-group">
@@ -50,7 +56,7 @@
                     <fieldset class="nhsuk-fieldset">
                       <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
                       <h1 class="nhsuk-fieldset__heading">
-                            Does the patient have any of the following visual acuity issues?
+                           Select all anticoagulent medicines currently prescribed to the patient:
                         </h1>
                       </legend>
 
@@ -74,7 +80,6 @@
                             <input class="nhsuk-input nhsuk-input--width-10" id="hdrva-text" name="hdrva-text" type="text">
                           </div>
                         </div>
-
 
                         <div class="nhsuk-checkboxes__item nhsuk-checkboxes--conditional">
                           <input class="nhsuk-checkboxes__input" id="visual-acuity-2" name="visual-acuity" type="checkbox" value="Habitual distance right visual acuity (HDLVA)" aria-controls="conditional-hdlva">

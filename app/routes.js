@@ -141,4 +141,12 @@ router.get(/addAnotherLft/, function (req, res) {
   }
 });
 
+router.get(/areYouSure/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('declaration-lft'); // if both input values are "Yes" - redirect to 'page-name' //
+  } else {
+    res.redirect('lft-start-day'); // if both input values are "Yes" - redirect to 'page-name' //
+  }
+});
+
 module.exports = router;

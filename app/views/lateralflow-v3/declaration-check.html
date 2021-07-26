@@ -35,72 +35,19 @@
                 </div>
                 <header class="page-header">
                   <span class="heading-secondary">Lateral Flow Test</span>
-                  <h1 class="nhsuk-heading-l govuk-heading-l">Summary</h1>
+                  <h1 class="nhsuk-heading-l govuk-heading-l">Declaration check</h1>
                 </header>
-                
-                <table class="nhsuk-table">
-                  <thead class="nhsuk-table__head"
-                          role="rowgroup">
-                    <tr role="row">
-                      <th class=""
-                          role="columnheader"
-                          scope="col">Collection date</th>
-                      <th>Collection code</th>
-                      <th>Lot number(s)</th>
-                      <th>Number of packs</th>
-                      <th></th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody class="nhsuk-table__body">
-                    <tr class="nhsuk-table__row"
-                        role="row">
-                      <td class="nhsuk-table__cell">8 July 2021</td> 
-                      <td class="nhsuk-table__cell">1234-5678-5555-2765</td> 
-                      <td class="nhsuk-table__cell">1234-3333</td>
-                      <td class="nhsuk-table__cell">7</td>
-                      <td class="nhsuk-table__cell--align-right">
-                        <a href="summary">View details</a> or <a href="">Delete</a></td>
-                      <td>
-                      </td>
-                    </tr>
-                  </tbody>
 
-                  <tbody class="nhsuk-table__body">
-                    <tr class="nhsuk-table__row"
-                        role="row">
-                      <td class="nhsuk-table__cell">8 July 2021</td> 
-                      <td class="nhsuk-table__cell">9876-1111-3579-6565</td> 
-                      <td class="nhsuk-table__cell">8008</td>
-                      <td class="nhsuk-table__cell">2</td>
-                      <td class="nhsuk-table__cell--align-right">
-                        <a href="summary">View details</a> or <a href="">Delete</a></td>
-                      <td>
-                      </td>
-                    </tr>
-                  </tbody>
 
-                  <tbody class="nhsuk-table__body">
-                    <tr class="nhsuk-table__row"
-                        role="row">
-                      <td class="nhsuk-table__cell">8 July 2021</td> 
-                      <td class="nhsuk-table__cell">2319-0033-2318-9112</td> 
-                      <td class="nhsuk-table__cell">65</td>
-                      <td class="nhsuk-table__cell">5</td>
-                      <td class="nhsuk-table__cell--align-right">
-                        <a href="summary">View details</a> or <a href="">Delete</a></td>
-                      <td>
-                      </td>
-                    </tr>
-                  </tbody>
-
-                </table>
-                <form action="addAnotherOne"
+                <form action="areYouSure"
                       class="form"
                       method="get">
                   <div class="nhsuk-form-group">
                     <fieldset class="nhsuk-fieldset">
-                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">Do you want to add another collection for the 21 July 2021?</legend></h1>
+                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">Are you sure you have nothing to declare for the 8 July 2021?</legend></h1>
+                        <span class="nhsuk-hint">
+                          Selecting 'No' then 'Continue' will take you back to the previous page. Selecting 'Yes' then 'Continue' will take you to the declaration.
+                        </span>
                       <div class="nhsuk-radios nhsuk-radios--inline">
                         <div class="nhsuk-radios__item">
                           <input class="nhsuk-radios__input"
@@ -119,12 +66,15 @@
                                 for="add-another-2">No</label>
                         </div>
                       </div>
-                    </fieldset><br>
+                    </fieldset>
                     <br>
-                    <button class="nhsuk-button"
-                          type="submit">Next</button>
+                    <br>
+                      <button class="nhsuk-button"
+                          type="submit">Continue</button>
                   </div>
+
                 </form>
+                      
               </div>
             </div>
           </div>
