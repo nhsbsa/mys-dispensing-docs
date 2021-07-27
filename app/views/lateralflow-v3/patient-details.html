@@ -20,6 +20,19 @@
   <div class="nhsBSA-sidebar-container">
     <div class="nhsBSA-sidebar-wrapper">
       <div class="nhsBSA-sidebar-content">
+
+
+      <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+        <div class="nhsuk-width-container-fluid">
+          <ol class="nhsuk-breadcrumb__list">
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/index">Index</a></li>
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="lft-start-month">Month</a></li>
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="lft-start-day">Day</a></li>
+          </ol>
+        </div>
+      </nav>
+
+
         <div class="nhsuk-width-container-fluid">
           <div class="nhsuk-main-wrapper"
                id="maincontent">
@@ -37,7 +50,7 @@
                   <span class="heading-secondary">Lateral Flow Test</span>
                   <h1 class="nhsuk-heading-l govuk-heading-l">Patient details</h1>
                 </header><!-- End of drop-down -->
-                <form action="summary"
+                <form action="add-another"
                       class="form"
                       method="get">
                   <div class="nhsuk-form-group">
@@ -139,12 +152,10 @@
                             id="lot-number">
                         <div class="nhsuk-date-input__item">
                           <div class="nhsuk-form-group">
-                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4"
-                                id="lot-number-1"
-                                name="lot-number-1"
-                                type="text">
+                            <input class="nhsuk-input nhsuk-input--width-5" id="lot-number-1" name="lot-number-1" type="text">
                           </div>
                         </div>
+
                       <div class="nhsuk-date-input__item">
                         <div class="nhsuk-form-group">
                           <p>-</p>
@@ -153,10 +164,7 @@
 
                         <div class="nhsuk-date-input__item">
                           <div class="nhsuk-form-group">
-                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4"
-                                id="lot-number-2"
-                                name="lot-number-2"
-                                type="text">
+                            <input class="nhsuk-input nhsuk-input--width-5" id="lot-number-2" name="lot-number-2" type="text">
                           </div>
                         </div>
                       </div>
