@@ -56,6 +56,8 @@
                   <div class="nhsuk-form-group">
                     <h1 class="nhsuk-label-wrapper"><label class="nhsuk-label nhsuk-label--m"
                            for="patient-full-name">Anonymous collection</label></h1>
+                           <span class="nhsuk-hint"
+                                id="date-of-birth-hint"><p>Select Yes or No</p></span>
                     <div class="test-case"
                          style="overflow: visible">
                       <div>
@@ -79,7 +81,8 @@
                               class="nhsuk-fieldset"
                               role="group">
                       <h2 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-label--m">Collect code</legend></h2><span class="nhsuk-hint"
-                                id="date-of-birth-hint">Enter the 16 digit code or zeros for an anonymous collection.</span>
+                                id="date-of-birth-hint"><pm style="color:red">Enter the 16 digit code or zeros for an anonymous collection</p></span>
+
                       <div class="nhsuk-date-input"
                           id="collection-code">
                         <div class="nhsuk-date-input__item">
@@ -147,7 +150,7 @@
                               class="nhsuk-fieldset"
                               role="group">
                       <h2 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-label--m">Lot number(s)</legend></h2><span class="nhsuk-hint"
-                                id="date-of-birth-hint">If there are two lot numbers please enter both.</span>
+                                id="date-of-birth-hint"><p>If there are two lot numbers please enter both</p></span>
                       <div class="nhsuk-date-input"
                             id="lot-number">
                         <div class="nhsuk-date-input__item">
@@ -173,10 +176,11 @@
 
                   <div class="nhsuk-form-group">
                     <h1 class="nhsuk-label-wrapper"><label class="nhsuk-label nhsuk-label--m"
-                          for="patient-post-code">Number of packs</label></h1><input class="nhsuk-input nhsuk-input--width-3"
-                          id="number-of-kits"
-                          name="number-of-kits"
-                          type="number">
+                          for="patient-post-code"><p>Number of packs</p></label></h1>
+                          <span class="nhsuk-hint"
+                                id="number-of-kits"><p>Enter number of packs</p></span><input class="nhsuk-input nhsuk-input--width-3"
+                                name="number-of-kits"
+                                type="number">
                   </div><br>
                   <button class="nhsuk-button"
                         type="submit">Continue</button>
