@@ -76,7 +76,7 @@
                                   </h2>
                               </legend>
                               <span class="nhsuk-hint" id="collection-code">
-                                <p style="color:red">Enter the 16 digit code or zeros for an anonymous collection
+                                <p style="background:yellow">Enter the 16 digit code or zeros for an anonymous collection
                               </span>
 
                               <div class="nhsuk-date-input" id="collection-code">
@@ -203,7 +203,7 @@
                               </span>
 
                               <form action="table-grid3" method="post" novalidate>
-                                <button class="nhsuk-button" type="submit">
+                                <button class="nhsuk-button nhsuk-button--reverse" type="submit">
                                       Enter
                                 </button>
                               </form>
@@ -265,17 +265,46 @@
                   </table>
                   <br>
 
+
+                <form action="addAnotherDate"
+                      class="form"
+                      method="get">
+                  <div class="nhsuk-form-group">
+                    <fieldset class="nhsuk-fieldset">
+                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">Do you want to add collections for another date?</legend></h1>
+                      <div class="nhsuk-radios nhsuk-radios--inline">
+                        <div class="nhsuk-radios__item">
+                          <input class="nhsuk-radios__input"
+                                id="add-1"
+                                name="radioInlineGroup"
+                                type="radio"
+                                value="Yes"> <label class="nhsuk-label nhsuk-radios__label"
+                                for="add-another-1">Yes</label>
+                        </div>
+                        <div class="nhsuk-radios__item">
+                          <input class="nhsuk-radios__input"
+                                id="add-2"
+                                name="radioInlineGroup"
+                                type="radio"
+                                value="no"> <label class="nhsuk-label nhsuk-radios__label"
+                                for="add-another-2">No (Submit)</label>
+                        </div>
+                      </div>
+                    </fieldset><br>
+                    <br>
+                    <button class="nhsuk-button"
+                          type="submit">Next</button>
+                  </div>
+                </form>
+
+
+
                   <form action="lft-start-day" method="post" novalidate>
                       <button class="nhsuk-button nhsuk-button--secondary" type="submit">
                                 Save and continue later
                       </button>
                   </form>
                 
-                  <form action="declaration-lft" method="post" novalidate>
-                      <button class="nhsuk-button nhsuk-button--reverse" type="submit">
-                                Complete your submission
-                      </button>
-                  </form>    
             </div>
           </div>
         </div>
