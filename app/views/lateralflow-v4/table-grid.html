@@ -40,8 +40,13 @@
                 </header>
                 <h3>Collection date: 8 July 2021</h3>
                 <span class="nhsuk-hint">
-                    Key the details of a collection on this page, then select 'Enter'. You will have the opportunity to enter multiple collections.
-                    Each entry will appear below under Collections entered.
+                    Key the details of a collection for this date, then select 'Enter' to add it to your submission. 
+                </span>
+                <span class="nhsuk-hint">
+                    Once entered, each collection will appear under ‘Collections entered’. 
+                </span>
+                <span class="nhsuk-hint">
+                    You will be able to add details of more collections for this date after each entry.
                 </span>
             
                   <table class="table-form">
@@ -73,7 +78,7 @@
                             <fieldset class="nhsuk-fieldset" aria-describedby="collect-code-hint">
                               <legend class="nhsuk-fieldset__legend nhsuk-label--m">
                                   <h2 class="nhsuk-fieldset__heading">
-                                  Collect code
+                                  Collection code
                                   </h2>
                               </legend>
                               <span class="nhsuk-hint" id="collection-code">
@@ -133,11 +138,11 @@
                             <fieldset class="nhsuk-fieldset" aria-describedby="lot-number-hint">
                               <legend class="nhsuk-fieldset__legend nhsuk-label--m">
                                   <h2 class="nhsuk-fieldset__heading">
-                                  Lot number(s)
+                                  Lot numbers
                                   </h2>
                               </legend>
                               <span class="nhsuk-hint" id="date-of-birth-hint">
-                                <p>For two lot numbers enter both</p>
+                                <p>Enter both lot numbers if 2 are needed</p>
                               </span>
 
                               <div class="nhsuk-date-input" id="lot-number">
@@ -174,7 +179,7 @@
                                   </h2>
                               </legend>
                               <span class="nhsuk-hint" id="number-of-kits">
-                                <p>Enter number of packs</p>
+                                <p>Enter number of packs, not kits</p>
                               </span>
 
                               <div class="nhsuk-date-input" id="collection-code">
@@ -193,13 +198,13 @@
                             <fieldset class="nhsuk-fieldset" aria-describedby="enter-hint">
                               <legend class="nhsuk-fieldset__legend nhsuk-label--m">
                                   <h2 class="nhsuk-fieldset__heading">
-                                  Enter
+                                  Add to submission
                                   </h2>
                               </legend>
                               <span class="nhsuk-hint" id="number-of-kits">
-                                Enter
+                                
                               </span>
-
+<br>
                               <form action="table-grid1" method="post" novalidate>
                                 <button class="nhsuk-button" type="submit">
                                       Enter
@@ -226,8 +231,8 @@
                           <thead class="nhsuk-table__head"
                             <tr>
                               <th>Anonymous?</th>
-                              <th>Collect code</th>
-                              <th>Lot number(s)</th>
+                              <th>Collection code</th>
+                              <th>Lot numbers</th>
                               <th>Number of packs</th>
                               <th></th>
                             </tr>
@@ -258,7 +263,7 @@
                                 name="radioInlineGroup"
                                 type="radio"
                                 value="no"> <label class="nhsuk-label nhsuk-radios__label"
-                                for="add-another-2">No (click Next to continue to declaration for submission)</label>
+                                for="add-another-2">No (declare submission and complete)</label>
                         </div>
                       </div>
                     </fieldset><br>
