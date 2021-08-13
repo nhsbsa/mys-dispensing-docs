@@ -133,6 +133,31 @@
                           </div>
                         </td>
 
+
+                        <td>
+                          <div class="nhsuk-form-group">
+                            <fieldset class="nhsuk-fieldset" aria-describedby="date-of-birth-hint" role="group">
+                              <legend class="nhsuk-fieldset__legend nhsuk-label--m">
+                                  <h2 class="nhsuk-fieldset__heading">
+                                  Number of packs
+                                  </h2>
+                              </legend>
+                              <span class="nhsuk-hint" id="number-of-kits">
+                                <p>Enter number of packs, not kits</p>
+                              </span>
+
+                              <div class="nhsuk-date-input" id="collection-code">
+                                <div class="nhsuk-date-input__item">
+                                  <div class="nhsuk-form-group">
+                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="number-of-kits" name="number-of-kits" type="number" pattern="[0-9]*">
+                                  </div>
+                                </div> 
+                              </div>
+                            </fieldset> 
+                          </div>
+                        </td>
+
+
                         <td>
                           <div class="nhsuk-form-group">
                             <fieldset class="nhsuk-fieldset" aria-describedby="date-of-birth-hint" role="group">
@@ -175,32 +200,6 @@
                             <fieldset class="nhsuk-fieldset" aria-describedby="date-of-birth-hint" role="group">
                               <legend class="nhsuk-fieldset__legend nhsuk-label--m">
                                   <h2 class="nhsuk-fieldset__heading">
-                                  Number of packs
-                                  </h2>
-                              </legend>
-                              <span class="nhsuk-hint" id="number-of-kits">
-                                <p>Enter number of packs, not kits</p>
-                              </span>
-
-                              <div class="nhsuk-date-input" id="collection-code">
-                                <div class="nhsuk-date-input__item">
-                                  <div class="nhsuk-form-group">
-                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="number-of-kits" name="number-of-kits" type="number" pattern="[0-9]*">
-                                  </div>
-                                </div> 
-                              </div>
-                            </fieldset> 
-                          </div>
-                        </td>
-
-
-
-
-                        <td>
-                          <div class="nhsuk-form-group">
-                            <fieldset class="nhsuk-fieldset" aria-describedby="date-of-birth-hint" role="group">
-                              <legend class="nhsuk-fieldset__legend nhsuk-label--m">
-                                  <h2 class="nhsuk-fieldset__heading">
                                   Add to submission
                                   </h2>
                               </legend>
@@ -236,8 +235,8 @@
                             <tr role="row">
                               <th>Anonymous?</th>
                               <th>Collection code</th>
-                              <th>Lot numbers</th>
                               <th>Number of packs</th>
+                              <th>Lot numbers</th>
                               <th></th>
                             </tr>
                         </thead>
