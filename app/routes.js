@@ -151,6 +151,22 @@ router.get(/areYouSure/, function (req, res) {
 
 router.get(/addAnotherDate/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('summary-add'); // if both input values are "Yes" - redirect to 'page-name' //
+  } else {
+    res.redirect('lft-start-day'); // if both input values are "Yes" - redirect to 'page-name' //
+  }
+});
+
+router.get(/deleteDate/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('delete-confirmation'); // if both input values are "Yes" - redirect to 'page-name' //
+  } else {
+    res.redirect('table-grid1'); // if both input values are "Yes" - redirect to 'page-name' //
+  }
+});
+
+router.get(/addToSummary/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('lft-start-day'); // if both input values are "Yes" - redirect to 'page-name' //
   } else {
     res.redirect('declaration2'); // if both input values are "Yes" - redirect to 'page-name' //
