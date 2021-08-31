@@ -40,13 +40,7 @@
                 </header>
                 <h2>Collection date: 8 July 2021</h2>
                 <span class="nhsuk-hint">
-                    Key the details of a collection for this date, then select 'Enter' to add it to your submission. 
-                </span>
-                <span class="nhsuk-hint">
-                    Once entered, each collection will appear under ‘Collections entered’. 
-                </span>
-                <span class="nhsuk-hint">
-                    You will be able to add details of more collections for this date after each entry.
+                    Please amend data.
                 </span>
             
                   <table class="table-form">
@@ -88,7 +82,7 @@
                               <div class="nhsuk-date-input" id="collection-code">
                                 <div class="nhsuk-date-input__item">
                                   <div class="nhsuk-form-group">
-                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="collection-code-1" name="collection-code-1" type="number" pattern="[0-9]*">
+                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="collection-code-1" name="collection-code-1" type="number" pattern="[0-9]*" value="1234">
                                   </div>
                                 </div>
                               
@@ -100,7 +94,7 @@
 
                                 <div class="nhsuk-date-input__item">
                                   <div class="nhsuk-form-group">
-                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="collection-code-2" name="collection-code-2" type="number" pattern="[0-9]*">
+                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="collection-code-2" name="collection-code-2" type="number" pattern="[0-9]*" value="5678">
                                   </div>
                                 </div>
 
@@ -112,7 +106,7 @@
 
                                 <div class="nhsuk-date-input__item">
                                   <div class="nhsuk-form-group">
-                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="collection-code-3" name="collection-code-3" type="number" pattern="[0-9]*">
+                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="collection-code-3" name="collection-code-3" type="number" pattern="[0-9]*" value="5555">
                                   </div>
                                 </div>
 
@@ -124,7 +118,7 @@
 
                                 <div class="nhsuk-date-input__item">
                                   <div class="nhsuk-form-group">
-                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="collection-code-4" name="collection-code-4" type="number" pattern="[0-9]*">
+                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="collection-code-4" name="collection-code-4" type="number" pattern="[0-9]*" value="2765">
                                   </div>
                                 </div>
 
@@ -149,7 +143,7 @@
                               <div class="nhsuk-date-input" id="collection-code">
                                 <div class="nhsuk-date-input__item">
                                   <div class="nhsuk-form-group">
-                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="number-of-kits" name="number-of-kits" type="number" pattern="[0-9]*">
+                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="number-of-kits" name="number-of-kits" type="number" pattern="[0-9]*" value="4">
                                   </div>
                                 </div> 
                               </div>
@@ -173,7 +167,7 @@
                               <div class="nhsuk-date-input" id="lot-number">
                                 <div class="nhsuk-date-input__item">
                                   <div class="nhsuk-form-group">
-                                    <input class="nhsuk-input nhsuk-input--width-5" id="lot-number-1" name="lot-number-1" type="text">
+                                    <input class="nhsuk-input nhsuk-input--width-5" id="lot-number-1" name="lot-number-1" type="text" value="007">
                                   </div>
                                 </div>
                               
@@ -185,7 +179,7 @@
 
                                 <div class="nhsuk-date-input__item">
                                   <div class="nhsuk-form-group">
-                                    <input class="nhsuk-input nhsuk-input--width-5" id="lot-number-2" name="lot-number-2" type="text">
+                                    <input class="nhsuk-input nhsuk-input--width-5" id="lot-number-2" name="lot-number-2" type="text" value="008">
                                   </div>
                                 </div>
 
@@ -208,9 +202,9 @@
                               </span>
                               <br>
                               <br>
-                              <form action="table-grid2" method="post" novalidate>
+                              <form action="table-grid1" method="post" novalidate>
                                 <button class="nhsuk-button" type="submit">
-                                      Add to submission
+                                      Confirm
                                 </button>
                               </form>
 
@@ -219,79 +213,10 @@
                         </td>
 
                       </tr>
-              
-                        <tbody>
-                        
-                          <tr>
-                            <td><p style="font-size:150%; font-weight:bold;" >Collections entered</p></td> 
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                          </tr>
-                        </tbody>
-
-                          <thead class="nhsuk-table__head"
-                                role="rowgroup">
-                            <tr role="row">
-                              <th>Anonymous?</th>
-                              <th>Collection code</th>
-                              <th>Number of packs</th>
-                              <th>Lot numbers</th>
-                              <th></th>
-                            </tr>
-                        </thead>
-
-
-                        <tbody class="nhsuk-table__body">
-                          <tr class="nhsuk-table__row"
-                              role="row">
-                            <td class="nhsuk-table__cell">N</td> 
-                            <td class="nhsuk-table__cell">1234-5678-5555-2765</td>
-                            <td class="nhsuk-table__cell">4</td>
-                            <td class="nhsuk-table__cell">007 - 008</td>
-                            <td class="nhsuk-table__cell--align-right">
-                              <a href="table-grid-change">Change details</a> or <a href="delete-check">Delete</a></td>
-
-                          </tr>
-                        </tbody>
-
 
                     </tbody>
                   </table>
                   <br>
-
-
-                <form action="addAnotherDate"
-                      class="form"
-                      method="get">
-                  <div class="nhsuk-form-group">
-                    <fieldset class="nhsuk-fieldset">
-                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">Have you completed all of the collections data for 8 July 2021?</legend></h1>
-                      <div class="nhsuk-radios nhsuk-radios--inline">
-                        <div class="nhsuk-radios__item">
-                          <input class="nhsuk-radios__input"
-                                id="add-1"
-                                name="radioInlineGroup"
-                                type="radio"
-                                value="Yes"> <label class="nhsuk-label nhsuk-radios__label"
-                                for="add-another-1">Yes</label>
-                        </div>
-                        <div class="nhsuk-radios__item">
-                          <input class="nhsuk-radios__input"
-                                id="add-2"
-                                name="radioInlineGroup"
-                                type="radio"
-                                value="no"> <label class="nhsuk-label nhsuk-radios__label"
-                                for="add-another-2">No (save and continue later)</label>
-                        </div>
-                      </div>
-                    </fieldset><br>
-                    <br>
-                    <button class="nhsuk-button"
-                          type="submit">Next</button>
-                  </div>
-                </form>
 
             </div>
           </div>

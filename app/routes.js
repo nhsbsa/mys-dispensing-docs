@@ -159,7 +159,7 @@ router.get(/addAnotherDate/, function (req, res) {
 
 router.get(/deleteDate/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('delete-confirmation'); // if both input values are "Yes" - redirect to 'page-name' //
+    res.redirect('table-grid1'); // if both input values are "Yes" - redirect to 'page-name' //
   } else {
     res.redirect('table-grid1'); // if both input values are "Yes" - redirect to 'page-name' //
   }
