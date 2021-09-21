@@ -173,4 +173,53 @@ router.get(/addToSummary/, function (req, res) {
   }
 });
 
+router.get(/addEnterVaccine01/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('table-summary'); 
+  } else {
+    res.redirect('all-vaccine-table-dropdown-1-10');
+  }
+});
+
+router.get(/addEnterVaccine1111/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('table-summary'); 
+  } else {
+    res.redirect('all-vaccine-table-dropdown-one-rec-new-page');
+  }
+});
+
+router.get(/addEnterVaccine1120/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('table-summary'); 
+  } else {
+    res.redirect('all-vaccine-table-dropdown-11-20');
+  }
+});
+
+router.get(/addEnterVaccine2123/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('table-summary'); 
+  } else {
+    res.redirect('all-vaccine-table-dropdown-21-23');
+  }
+});
+
+router.get(/addEnterVaccine0/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('table-summary'); 
+  } else {
+    res.redirect('all-vaccine-table-dropdown-1-10-pagination');
+  }
+});
+
+router.get(/addEnterVaccine0110/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('table-summary'); 
+  } else {
+    res.redirect('all-vaccine-table-dropdown-1-10-pagination');
+  }
+});
+
+
 module.exports = router;
