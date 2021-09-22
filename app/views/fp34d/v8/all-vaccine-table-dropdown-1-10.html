@@ -40,7 +40,7 @@
           <div class="nhsuk-main-wrapper"
                 id="maincontent">
             <div class="nhsuk-grid-row">
-              <div class="nhsuk-grid-column-two-thirds">
+
                 <header class="page-header">
                   <span class="heading-secondary">July 2021 submission</span>
                   <h1 class="nhsuk-heading-l govuk-heading-l">Vaccine details</h1>
@@ -49,9 +49,9 @@
                   <table class="table-form">
                     <thead>
                       <tr>
-                        <th scope="col">Select vaccine</th>
-                        <th scope="col">Select vaccine details</th>
-                        <th scope="col">Total</th>
+                        <th scope="col">Vaccine</th>
+                        <th scope="col">Vaccine details</th>
+                        <th scope="col">Total dosage</th>
                         <th scope="col"></th>
                       </tr>
                     </thead>
@@ -62,12 +62,13 @@
                         <td  class="test-case" style="overflow: visible">
                           <div>
                               <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="vaccines" aria-required="true">
+                                  <option value="x">Please choose vaccine</option>
                                   <option value="x">Influenza</option>
                                   <option value="x">Typhoid</option>
                                   <option value="x">Hepatitis A</option>
                                   <option value="x">Hepatitis B</option>
                                   <option value="x">Pneumococcal</option>
-                                  <option value="x">Memingococccal</option>
+                                  <option value="x">Memingococcal</option>
                               </select>
                           </div>
                         </td>
@@ -76,6 +77,7 @@
                           <div class="test-case" style="overflow: visible">
                               <div>
                                   <select id="influenza-vaccine" class="typeahead js-hidden nhsuk-select" name="influenza-vaccine" aria-required="true">
+                                      <option value="FA123 - Boots, Eldon Square, Newcastle, NE1 7XE">Please choose</option>
                                       <option value="FA123 - Boots, Eldon Square, Newcastle, NE1 7XE">Adjuvanted trivalent influenza vaccine (surface antigen,Inact) Susp for Inj 0.5ml PF Syringes
                                                                                         (Seqirus Vaccines Ltd)</option>
                                       <option value="FA124 - Boots, Northumberland Street, Newcastle, NE1 7DQ">Fluad vaccine suspension for injection 0.5ml PF syringes (Trivalent)(Disc 08/20)
@@ -105,7 +107,7 @@
                         <td>
                           <form action="all-vaccine-table-dropdown-one-rec-new-page" method="post" novalidate>
                                 <button class="nhsuk-button" type="submit">
-                                      Add
+                                      Add vaccine
                                 </button>
                           </form>
                          </td> 
@@ -129,6 +131,9 @@
                         </th>
                         <th role="columnheader" class="" scope="col">
                           Total
+                        </th>
+                        <th role="columnheader" class="" scope="col">
+                          
                         </th>
                       </tr>
                     </thead>
@@ -220,7 +225,7 @@
                       class="form"
                       method="get">
                     <fieldset class="nhsuk-fieldset">
-                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">Have you completed entering vaccines?</legend></h1>
+                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">Have you completed entering all the vaccines for this doctor?</legend></h1>
                       <div class="nhsuk-radios nhsuk-radios--inline">
                         <div class="nhsuk-radios__item">
                           <input class="nhsuk-radios__input"
@@ -236,7 +241,7 @@
                               name="radioInlineGroup"
                               type="radio"
                               value="no"> <label class="nhsuk-label nhsuk-radios__label"
-                              for="add-another-2">No</label>
+                              for="add-another-2">No (save and continue later)</label>
                         </div>
                       </div>
                     </fieldset>
@@ -249,7 +254,7 @@
                         type="submit">Continue</button>
       
                 </form>
-              </div>
+
             </div>
           </div>
         </div>

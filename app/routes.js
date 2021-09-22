@@ -177,7 +177,7 @@ router.get(/addEnterVaccine01/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('table-summary'); 
   } else {
-    res.redirect('all-vaccine-table-dropdown-1-10');
+    res.redirect('start-page');
   }
 });
 
@@ -185,7 +185,7 @@ router.get(/addEnterVaccine1111/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('table-summary'); 
   } else {
-    res.redirect('all-vaccine-table-dropdown-one-rec-new-page');
+    res.redirect('start-page');
   }
 });
 
@@ -209,7 +209,7 @@ router.get(/addEnterVaccine0/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('table-summary'); 
   } else {
-    res.redirect('all-vaccine-table-dropdown-1-10-pagination');
+    res.redirect('start-page');
   }
 });
 
