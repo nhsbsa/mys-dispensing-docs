@@ -175,9 +175,9 @@ router.get(/addToSummary/, function (req, res) {
 
 router.get(/addEnterVaccine01/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('table-summary'); 
+    res.redirect('all-vaccine-table-dropdown-1-10'); 
   } else {
-    res.redirect('start-page');
+    res.redirect('all-vaccine-table-dropdown-1-10');
   }
 });
 

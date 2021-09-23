@@ -40,7 +40,7 @@
           <div class="nhsuk-main-wrapper"
                 id="maincontent">
             <div class="nhsuk-grid-row">
-              <div class="nhsuk-grid-column-two-thirds">
+            
                 <header class="page-header">
                   <span class="heading-secondary">July 2021 submission</span>
                   <h1 class="nhsuk-heading-l govuk-heading-l">Vaccine details</h1>
@@ -49,8 +49,8 @@
                   <table class="table-form">
                     <thead>
                       <tr>
-                        <th scope="col">Select vaccine</th>
-                        <th scope="col">Select vaccine details</th>
+                        <th scope="col">Vaccine type</th>
+                        <th scope="col">Vaccine</th>
                         <th scope="col">Total</th>
                         <th scope="col"></th>
                       </tr>
@@ -62,6 +62,7 @@
                         <td  class="test-case" style="overflow: visible">
                           <div>
                               <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="vaccines" aria-required="true">
+                                  <option value="x">Choose vaccine type</option>
                                   <option value="x">Influenza</option>
                                   <option value="x">Typhoid</option>
                                   <option value="x">Hepatitis A</option>
@@ -76,6 +77,7 @@
                           <div class="test-case" style="overflow: visible">
                               <div>
                                   <select id="influenza-vaccine" class="typeahead js-hidden nhsuk-select" name="influenza-vaccine" aria-required="true">
+                                      <option value="FA123 - Boots, Eldon Square, Newcastle, NE1 7XE">Choose vaccine</option>
                                       <option value="FA123 - Boots, Eldon Square, Newcastle, NE1 7XE">Adjuvanted trivalent influenza vaccine (surface antigen,Inact) Susp for Inj 0.5ml PF Syringes
                                                                                         (Seqirus Vaccines Ltd)</option>
                                       <option value="FA124 - Boots, Northumberland Street, Newcastle, NE1 7DQ">Fluad vaccine suspension for injection 0.5ml PF syringes (Trivalent)(Disc 08/20)
@@ -105,7 +107,7 @@
                         <td>
                           <form action="all-vaccine-table-dropdown-1-10-pagination" method="post" novalidate>
                                 <button class="nhsuk-button" type="submit">
-                                      Add
+                                      Add vaccine
                                 </button>
                           </form>
                          </td> 
@@ -122,10 +124,10 @@
                     <thead role="rowgroup" class="nhsuk-table__head">
                       <tr role="row">
                         <th role="columnheader" class="" scope="col">
-                          Vaccine
+                          Vaccine type
                         </th>
                         <th role="columnheader" class="" scope="col">
-                          Details
+                          Vaccine
                         </th>
                         <th role="columnheader" class="" scope="col">
                           Total
@@ -139,6 +141,9 @@
                         <td class="nhsuk-table__cell ">Adjuvanted trivalent influenza vaccine (surface antigen,Inact) Susp for Inj 0.5ml PF Syringes
                                                                                         (Seqirus Vaccines Ltd)</td>
                         <td class="nhsuk-table__cell--align-right ">7</td>
+                        <td class="nhsuk-table__cell--align-right">
+                          <a href="amend">Amend</a> or <a href="delete">Delete</a></td>
+
                       </tr>
                       
                       <tr role="row" class="nhsuk-table__row">
@@ -146,20 +151,29 @@
                         <td class="nhsuk-table__cell ">Fluad vaccine suspension for injection 0.5ml PF syringes (Trivalent)(Disc 08/20)
                                                                                         (Seqirus Vaccines Ltd)</td>
                         <td class="nhsuk-table__cell--align-right ">9</td>
+                        <td class="nhsuk-table__cell--align-right">
+                          <a href="amend">Amend</a> or <a href="delete">Delete</a></td>
+
                       </tr>
                       
-                       <tr role="row" class="nhsuk-table__row">
+                      <tr role="row" class="nhsuk-table__row">
                         <td class="nhsuk-table__cell ">Typhoid</td>
                         <td class="nhsuk-table__cell ">Typhoid polysaccharide 25micrograms/0.5ml vaccine soln for inj PF syringes</td>
                         <td class="nhsuk-table__cell--align-right ">2</td>
+                        <td class="nhsuk-table__cell--align-right">
+                          <a href="amend">Amend</a> or <a href="delete">Delete</a></td>
+
                       </tr>
 
-<tbody class="nhsuk-table__body">
+                    <tbody class="nhsuk-table__body">
                       <tr role="row" class="nhsuk-table__row">
                         <td class="nhsuk-table__cell ">Influenza</td>
                         <td class="nhsuk-table__cell ">Fluarix Tetra/Fluarix vaccine susp for Inj 0.5ml PF Syringes (Quadrivalent)
                                                                                         (GlaxoSmithKline)</td>
                         <td class="nhsuk-table__cell--align-right ">4</td>
+                        <td class="nhsuk-table__cell--align-right">
+                          <a href="amend">Amend</a> or <a href="delete">Delete</a></td>
+
                       </tr>
                     </tbody>
 
@@ -169,6 +183,9 @@
                         <td class="nhsuk-table__cell ">Fluenz Tetra/Fluenz vaccine nasal suspension 0.2ml unit dose (Quadrivalent)
                                                                                         (AstraZeneca UK Ltd)</td>
                         <td class="nhsuk-table__cell--align-right ">11</td>
+                        <td class="nhsuk-table__cell--align-right">
+                          <a href="amend">Amend</a> or <a href="delete">Delete</a></td>
+
                       </tr>
                     </tbody>
 
@@ -177,6 +194,9 @@
                         <td class="nhsuk-table__cell ">Typhoid</td>
                         <td class="nhsuk-table__cell ">Typhoid vaccine (live, oral, strain ty21a) gastro-resistant capsules</td>
                         <td class="nhsuk-table__cell--align-right ">2</td>
+                        <td class="nhsuk-table__cell--align-right">
+                          <a href="amend">Amend</a> or <a href="delete">Delete</a></td>
+
                       </tr>
                     </tbody>
 
@@ -185,6 +205,9 @@
                         <td class="nhsuk-table__cell ">Typhoid</td>
                         <td class="nhsuk-table__cell ">Typhim Vi 25mcg/0.5ml Vaccine Soln for Inj PF Syringes</td>
                         <td class="nhsuk-table__cell--align-right ">5</td>
+                        <td class="nhsuk-table__cell--align-right">
+                          <a href="amend">Amend</a> or <a href="delete">Delete</a></td>
+
                       </tr>
                     </tbody>
 
@@ -193,6 +216,9 @@
                         <td class="nhsuk-table__cell ">Hepatitis A</td>
                         <td class="nhsuk-table__cell ">Vaqta Adult/Vaqta Vaccine Susp for Inj 1ml PF Syringe</td>
                         <td class="nhsuk-table__cell--align-right ">8</td>
+                        <td class="nhsuk-table__cell--align-right">
+                          <a href="amend">Amend</a> or <a href="delete">Delete</a></td>
+
                       </tr>
                     </tbody>
 
@@ -201,6 +227,9 @@
                         <td class="nhsuk-table__cell ">Pneumococcal</td>
                         <td class="nhsuk-table__cell ">Pneumococcal polysaccharide vaccine soln for Inj 0.5ml pre-filled syringes </td>
                         <td class="nhsuk-table__cell--align-right ">6</td>
+                        <td class="nhsuk-table__cell--align-right">
+                          <a href="amend">Amend</a> or <a href="delete">Delete</a></td>
+
                       </tr>
                     </tbody>
 
@@ -209,6 +238,9 @@
                         <td class="nhsuk-table__cell ">Hepatitis B</td>
                         <td class="nhsuk-table__cell ">Engerix B 10mcg/0.5ml Vaccine Susp for Inj PF Syringe/Vials </td>
                         <td class="nhsuk-table__cell--align-right ">6</td>
+                        <td class="nhsuk-table__cell--align-right">
+                          <a href="amend">Amend</a> or <a href="delete">Delete</a></td>
+
                       </tr>
                     </tbody>
                                 
@@ -216,21 +248,21 @@
 
 
 
-<nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
-  <ul class="nhsuk-list nhsuk-pagination__list">
-    
-    <li class="nhsuk-pagination-item--next">
-      <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="all-vaccine-table-dropdown-11-20">
-        <span class="nhsuk-pagination__title">Next</span>
-        <span class="nhsuk-u-visually-hidden">:</span>
-        <span class="nhsuk-pagination__page">11 to 20 (of 23)</span>
-        <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
-        </svg>
-      </a>
-    </li>
-  </ul>
-</nav>
+                    <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+                      <ul class="nhsuk-list nhsuk-pagination__list">
+                        
+                        <li class="nhsuk-pagination-item--next">
+                          <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="all-vaccine-table-dropdown-11-20">
+                            <span class="nhsuk-pagination__title">Next</span>
+                            <span class="nhsuk-u-visually-hidden">:</span>
+                            <span class="nhsuk-pagination__page">11 to 20 (of 23)</span>
+                            <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                              <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
 
 
                   <div class="nhsuk-form-group">
@@ -238,7 +270,7 @@
                       class="form"
                       method="get">
                     <fieldset class="nhsuk-fieldset">
-                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">Have you completed entering vaccines?</legend></h1>
+                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">Have you completed entering all the vaccines for this doctor?</legend></h1>
                       <div class="nhsuk-radios nhsuk-radios--inline">
                         <div class="nhsuk-radios__item">
                           <input class="nhsuk-radios__input"
@@ -268,7 +300,7 @@
       
                 </form>
               </div>
-            </div>
+           
           </div>
         </div>
       </div>
