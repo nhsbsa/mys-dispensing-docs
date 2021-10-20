@@ -54,24 +54,8 @@
                                   Name of doctor
                                 </label>
                               </h1>
+                              <input class="nhsuk-input nhsuk-input--width-20" id="doctor-name" name="doctor-name" type="text">
                             </div>
-
-                        <td  class="test-case" style="overflow: visible">
-                          <div>
-                              <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="vaccines" aria-required="true">
-                                  <option value="x">Choose a doctor</option>
-                                  <option value="x">Dr Strangelove</option>
-                                  <option value="x">Dr No</option>
-                                  <option value="x">Dr Schivago</option>
-                                  <option value="x">Dr Walton</option>
-                                  <option value="x">Dr Brady</option>
-                                  <option value="x">Dr Bowley</option>
-                              </select>
-                          </div>
-                        </td>
-<br>
-<br>
-
 
                             <div class="nhsuk-form-group">
                               <h1 class="nhsuk-label-wrapper">
@@ -81,8 +65,45 @@
                               </h1>
                               <input class="nhsuk-input nhsuk-input--width-20" id="doctor-number" name="doctor-number" type="text">
                             </div>
-<br>
-<br>
+
+
+
+                            <div class="nhsuk-form-group">
+                                <fieldset class="nhsuk-fieldset">
+                                  <legend class="nhsuk-fieldset__legend nhsuk-label--m">
+                                      <h2 class="nhsuk-fieldset__heading">
+                                          Is this a doctor or practice payment?
+                                      </h2>
+                                  </legend>
+
+
+
+
+                                  <div class="nhsuk-radios nhsuk-radios--inline">
+
+                                    <div class="nhsuk-radios__item">
+                                        <input class="nhsuk-radios__input" id="payment-type-1" name="payment-type" type="radio" value="Doctor payment">
+                                        <label class="nhsuk-label nhsuk-radios__label" for="payment-type-1">
+                                          Doctor payment
+                                        </label>
+                                    </div>
+
+
+
+                                    <div class="nhsuk-radios__item">
+                                        <input class="nhsuk-radios__input" id="payment-type-2" name="payment-type" type="radio" value="Practice payment">
+                                        <label class="nhsuk-label nhsuk-radios__label" for="payment-type-2">
+                                            Practice payment
+                                        </label>
+                                    </div>
+
+
+
+                                  </div>
+                                </fieldset>
+                            </div>
+
+
             <button class="nhsuk-button" type="submit">
               Continue
             </button>

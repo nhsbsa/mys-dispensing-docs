@@ -55,7 +55,7 @@
                   <h1 class="nhsuk-heading-l govuk-heading-l">Submission details for all doctors</h1>
                 </header>
                 <hr>
-              
+                      
                 <form action="declaration"
                       method="post">
                   <table class="table-form">
@@ -260,7 +260,14 @@
                     </tbody>
 
                   </table>
-                  
+
+                      <form action="all-vaccine-table-dropdown-one-rec" method="post" novalidate>
+                        <button class="nhsuk-button nhsuk-button--secondary" type="submit">
+                                  Amend details
+                        </button>
+                      </form>       
+
+<br>
                   <table>
                   <thead role="rowgroup" class="nhsuk-table__head">
                       <h3>Summary for Doctor No</h3>
@@ -301,10 +308,20 @@
                     </tbody>
 
                   </table> 
-
-                  <button class="nhsuk-button"
-                        type="submit">Submit</button>             
+                    <form action="all-vaccine-table-dropdown-1-10" method="post" novalidate>
+                      <button class="nhsuk-button nhsuk-button--secondary" type="submit">
+                                Amend details
+                      </button>
+                    </form>       
                 </form>
+                <br>
+
+                    <form action="declaration" method="post" novalidate>
+                      <button class="nhsuk-button" type="submit">
+                                Submit
+                      </button>
+                    </form>       
+
               </div>
             </div>
           </div>
