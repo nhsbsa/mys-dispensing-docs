@@ -193,7 +193,7 @@ router.get(/addEnterVaccine1120/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('table-summary'); 
   } else {
-    res.redirect('all-vaccine-table-dropdown-11-20');
+    res.redirect('start-page');
   }
 });
 
@@ -201,7 +201,7 @@ router.get(/addEnterVaccine2123/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('table-summary'); 
   } else {
-    res.redirect('all-vaccine-table-dropdown-21-23');
+    res.redirect('start-page');
   }
 });
 

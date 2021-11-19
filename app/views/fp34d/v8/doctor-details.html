@@ -43,23 +43,21 @@
             <div class="nhsuk-grid-column-two-thirds">
                                 <header class="page-header">
                                   <span class="heading-secondary">July 2021 submission</span>
-                                  <h1 class="nhsuk-heading-l govuk-heading-l">GP details</h1>
+                                  <h1 class="nhsuk-heading-l govuk-heading-l">GP or nurse details</h1>
                                 </header>
 
                           <form action="table-dropdown-no-records" method="post">
 
                             <div class="nhsuk-form-group">
-                              <h1 class="nhsuk-label-wrapper">
-                                <label class="nhsuk-label nhsuk-label--m" for="doctor-name">
-                                  Name of GP
-                                </label>
-                              </h1>
-                            </div>
+                              <p>Select a GP or nurse to record the vaccines they have administered for your practice.</p>
+                            
+                             
+                              </div>
 
                         <td  class="test-case" style="overflow: visible">
                           <div>
                               <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="vaccines" aria-required="true">
-                                  <option value="x">Choose a GP</option>
+                                  <option value="x">Choose a GP or nurse</option>
                                   <option value="x">Dr Strangelove</option>
                                   <option value="x">Dr No</option>
                                   <option value="x">Dr Schivago</option>
@@ -72,23 +70,20 @@
 <br>
 <br>
 
-
                             <div class="nhsuk-form-group">
                               <h1 class="nhsuk-label-wrapper">
-                                <label class="nhsuk-label nhsuk-label--m" for="doctor-number">
-                                  GP index number
+                                <label style="background:pink" class="nhsuk-label nhsuk-label--m" for="doctor-number">
+                                  Index number
                                 </label>
                               </h1>
-                              <input class="nhsuk-input nhsuk-input--width-20" id="doctor-number" name="doctor-number" type="text">
-                            </div>
+                              <p>This number will automatically populate after you have chosen the GP or nurse.</p>
+                              <input class="nhsuk-input nhsuk-input--width-10" id="doctor-number" name="doctor-number" type="text">
+                              </div>
 <br>
 <br>
             <button class="nhsuk-button" type="submit">
               Continue
             </button>
-
-
-
 
                           </form>
                         </div>
