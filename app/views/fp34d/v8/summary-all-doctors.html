@@ -37,24 +37,27 @@
 
                 <header class="page-header">
                   <span class="heading-secondary">July 2021 submission</span>
-                  <h1 class="nhsuk-heading-l govuk-heading-l">Submission details for all doctors and nurses</h1>
+                  <h1 class="nhsuk-heading-l govuk-heading-l">Full submission details</h1>
                 </header>
-                <hr>
+                <span class="nhsuk-hint">
+                    These tables summarise the vaccine details you have added for each individual GP or nurse. You can change their vaccine entries by selecting their Amend submission button.
+                </span>
+              
                       
                 <form action="declaration"
                       method="post">
                   <table class="table-form">
-                    <h3>Summary for (whoever)</h3>
+                    <h3>Vaccine submission summary for (GP or nurse on the practice list)</h3>
                     <thead role="rowgroup" class="nhsuk-table__head">
                       <tr role="row">
+                        <th role="columnheader" class="" scope="col">
+                          Vaccine type
+                        </th>
                         <th role="columnheader" class="" scope="col">
                           Vaccine
                         </th>
                         <th role="columnheader" class="" scope="col">
-                          Details
-                        </th>
-                        <th role="columnheader" class="" scope="col">
-                          Total doses
+                          Total vaccine doses
                         </th>
                       </tr>
                     </thead>
@@ -248,23 +251,23 @@
 
                       <form action="all-vaccine-table-dropdown-1-10-pagination" method="post" novalidate>
                         <button class="nhsuk-button nhsuk-button--secondary" type="submit">
-                                  Amend details for (whoever)
+                                  Amend submission for (GP or nurse from practice list)
                         </button>
                       </form>       
 
 <br>
                   <table>
                   <thead role="rowgroup" class="nhsuk-table__head">
-                      <h3>Summary for (whoever)</h3>
+                      <h3>Vaccine submission summary for (GP or nurse on the practice list)</h3>
                       <tr role="row">
+                        <th role="columnheader" class="" scope="col">
+                          Vaccine type
+                        </th>
                         <th role="columnheader" class="" scope="col">
                           Vaccine
                         </th>
                         <th role="columnheader" class="" scope="col">
-                          Details
-                        </th>
-                        <th role="columnheader" class="" scope="col">
-                          Total doses
+                          Total vaccine doses
                         </th>
                       </tr>
                     </thead>          
@@ -295,15 +298,18 @@
                   </table> 
                     <form action="all-vaccine-table-dropdown-1-10" method="post" novalidate>
                       <button class="nhsuk-button nhsuk-button--secondary" type="submit">
-                                Amend details for (whoever)
+                                Vaccine submission summary for (GP or nurse on the practice list)
                       </button>
                     </form>       
                 </form>
                 <br>
-
+                
+                <span class="nhsuk-hint">
+                    Select <b>Continue</b> to declare this month’s submission as complete.
+                </span>
                     <form action="declaration" method="post" novalidate>
                       <button class="nhsuk-button" type="submit">
-                                Submit
+                                Continue
                       </button>
                     </form>       
 

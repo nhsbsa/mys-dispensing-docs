@@ -28,7 +28,7 @@
 
                 <header class="page-header">
                   <span class="heading-secondary">July 2021 submission</span>
-                  <h1 class="nhsuk-heading-l govuk-heading-l">Vaccine details</h1>
+                  <h1 class="nhsuk-heading-l govuk-heading-l">Enter vaccine details</h1>
                 </header>
 <!--
               <p style="background:lightyellow">You have entered 10 vaccines, to view the vaccines you have already entered click Previous below</p>
@@ -37,22 +37,20 @@
                   <h3 class="nhsuk-warning-callout__label">
                     <span role="text">
                       <span class="nhsuk-u-visually-hidden">Important: </span>
-                      Next entries
+                      Previous entries
                     </span>
                   </h3>
-                  <p>You can enter 10 vaccines per page. You have entered 10 vaccines, to view the vaccines you have already entered click Previous below.</p>
+                  <p>You can enter 10 vaccines per page. To view the vaccines you have already entered, select <b>Previous</b>.</p>
                 </div>
-
-                <h3>Vaccine entries administered by (whoever)</h3>
-                        
+        
                 <span class="nhsuk-hint">
-                    Enter the details of vaccines administered by (whoever) for this month, then select 'Add vaccine' to add it to your submission.
+                    Enter the details of vaccines administered by (GP or nurse from practice list) for (submission month), then select <b>Add vaccine</b> to add it to your submission.
                 </span>
                 <span class="nhsuk-hint">
                     Once entered, each vaccine will appear under ‘Vaccines administered’.
                 </span>
                 <span class="nhsuk-hint">
-                    You will be able to add details of more vaccines for (whoever) after each entry.
+                    You will be able to add another vaccine administered by (GP or nurse from practice list) after each entry.
                 </span>
 
                   <table class="table-form">
@@ -60,7 +58,7 @@
                       <tr>
                         <th scope="col">Vaccine type</th>
                         <th scope="col">Vaccine</th>
-                        <th scope="col">Total doses</th>
+                        <th scope="col">Total vaccine doses</th>
                         <th scope="col"></th>
                       </tr>
                     </thead>
@@ -139,9 +137,10 @@
                           Vaccine
                         </th>
                         <th role="columnheader" class="" scope="col">
-                          Total doses
+                          Total vaccine doses
                         </th>
                         <th role="columnheader" class="" scope="col">
+                          Action
                         </th>
                       </tr>
                     </thead>
@@ -181,7 +180,12 @@
                       class="form"
                       method="get">
                     <fieldset class="nhsuk-fieldset">
-                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">Have you completed entering all the vaccines for (whoever)?</legend></h1>
+                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">Have you finished entering all of the (month of submission) (year of submission) vaccines for (GP or nurse)?</legend></h1>
+                        <span class="nhsuk-hint">
+                            Only answer this question when you want to leave this screen.
+                        </span>
+                        <br>
+
                       <div class="nhsuk-radios nhsuk-radios--inline">
                         <div class="nhsuk-radios__item">
                           <input class="nhsuk-radios__input"
