@@ -223,7 +223,7 @@ router.get(/addEnterVaccine0110/, function (req, res) {
 
 router.get(/addContractor/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('contractor-nav'); 
+    res.redirect('create-contractor-1'); 
   } else {
     res.redirect('caseworker-nav');
   }
@@ -237,4 +237,28 @@ router.get(/addRetrospective/, function (req, res) {
   }
 });
 
+router.get(/updateContractor/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('update-contractor-list'); 
+  } else {
+    res.redirect('caseworker-nav');
+  }
+});
+
+router.get(/deactivateContractor/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('deactivate-contractor-confirmation'); 
+  } else {
+    res.redirect('deactivate-contractor-list');
+  }
+});
+
+
+router.get(/deactivateAnotherContractor/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('deactivate-contractor-list'); 
+  } else {
+    res.redirect('caseworker-nav');
+  }
+});
 module.exports = router;
