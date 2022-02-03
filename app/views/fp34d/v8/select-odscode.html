@@ -1,0 +1,83 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-full-width.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  MYS Dispensing Doctors
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+
+  <div class="nhsBSA-sidebar-wrapper">
+    <div class="nhsBSA-sidebar-content">
+      
+      <div class="nhsuk-width-container-fluid">
+
+        <div class="nhsuk-main-wrapper" id="maincontent">
+
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+                                
+
+                          <h1>
+                            High volume vaccinations
+                          </h1>
+
+
+                          <form action="start-page-1" method="post">
+
+                            <div class="nhsuk-form-group">
+                              <p>You have been identified as working across multiple practices.<p/>
+                              <p>Select an ODS code that you would like to make a submision for.</p>                        
+                            </div>
+
+                        <td  class="test-case" style="overflow: visible">
+                          <div>
+                              <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="vaccines" aria-required="true">
+                                  <option value="x">Choose an ODS Code</option>
+                                  <option value="x">ANANAN</option>
+                                  <option value="x">1X2Y3Z</option>
+                                  <option value="x">9A8B7C</option>
+                                  <option value="x">5F4G3H</option>
+                              </select>
+                          </div>
+                        </td>
+
+<br>
+<br>
+            <button class="nhsuk-button" type="submit">
+              Continue
+            </button>
+
+                          </form>
+                        </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+{% endblock %}

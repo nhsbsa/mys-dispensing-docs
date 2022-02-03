@@ -42,8 +42,6 @@
           
                 <div class="nhsuk-form-group">
                   <p>These tables summarise the vaccine details that were submitted for each individual GP or nurse for (month of previous submission selected) (year of submission).
-                  <br>
-                  <br>You cannot change any of these details.</p>                        
                 </div>
                 <hr>
                       
@@ -185,46 +183,46 @@
                     </tbody>
 
                   </table> 
-                   
-
-
-
-                   <h3 class="nhsuk-heading-m">
-                Previous submissions
-              </h3>
-              <p>These months have already been submitted but you can retrospectively add additional.</p>
-              <table class="nhsuk-table">
-                <thead role="rowgroup" class="nhsuk-table__head">
-                  <tr role="row">
-                    <th role="columnheader" class="" scope="col">
-                      Month/Year
-                    </th>
-                    <th role="columnheader" class="" scope="col">
-                      Number of vaccine doses
-                    </th>
-                    <td role="columnheader" class="nhsuk-table__cell--align-right" scope="col">
-                      <b>Action<b>
-                    </td>
-                  </tr>
-                </thead>
-                        <td  class="test-case" style="overflow: visible">
-                          <div>
-                              <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="vaccines" aria-required="true">
-                                  <option value="x">Choose an submission period</option>
-                                  <option value="x">August 2021</option>
-                                  <option value="x">July 2021</option>
-                                  <option value="x">June 2021</option>
-                                  <option value="x">May 2021</option>
-                              </select>
-                          </div>
-                        </td>
-                        <td>300</td>
-                        <td class="nhsuk-table__cell--align-right"><a href="doctor-details">Add to submission</a></td>
-              
-              </table>
+            
                 </form>
                 <br>
 
+
+                  <div class="nhsuk-form-group">
+                  <form action="addRetrospective"
+                      class="form"
+                      method="get">
+                    <fieldset class="nhsuk-fieldset">
+                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">Do you want to add to this submission?</legend></h1>
+                        
+                        <br>
+                        <div class="nhsuk-radios nhsuk-radios--inline">
+                        <div class="nhsuk-radios__item">
+                          <input class="nhsuk-radios__input"
+                              id="add-1"
+                              name="radioInlineGroup"
+                              type="radio"
+                              value="Yes"> <label class="nhsuk-label nhsuk-radios__label"
+                              for="add-another-1">Yes</label>
+                        </div>
+                        <div class="nhsuk-radios__item">
+                          <input class="nhsuk-radios__input"
+                              id="add-2"
+                              name="radioInlineGroup"
+                              type="radio"
+                              value="no"> <label class="nhsuk-label nhsuk-radios__label"
+                              for="add-another-2">No</label>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <br>
+                    
+                  </div>
+                  
+                      <button class="nhsuk-button"
+                        type="submit">Continue</button>
+      
+                </form>
 
               </div>
             </div>

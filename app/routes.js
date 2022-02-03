@@ -229,4 +229,12 @@ router.get(/addContractor/, function (req, res) {
   }
 });
 
+router.get(/addRetrospective/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('doctor-details'); 
+  } else {
+    res.redirect('start-page-1');
+  }
+});
+
 module.exports = router;
