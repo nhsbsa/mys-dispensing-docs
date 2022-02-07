@@ -223,9 +223,9 @@ router.get(/addEnterVaccine0110/, function (req, res) {
 
 router.get(/addContractor/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('create-contractor-1'); 
+    res.redirect('caseworker-nav'); 
   } else {
-    res.redirect('caseworker-nav');
+    res.redirect('contractor-nav');
   }
 });
 
