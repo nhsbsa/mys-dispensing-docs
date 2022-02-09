@@ -223,9 +223,9 @@ router.get(/addEnterVaccine0110/, function (req, res) {
 
 router.get(/addContractor/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('caseworker-nav'); 
+    res.redirect('contractor-nav'); 
   } else {
-    res.redirect('contractor-nav');
+    res.redirect('caseworker-nav');
   }
 });
 
@@ -306,6 +306,14 @@ router.get(/deactivatePerformer/, function (req, res) {
     res.redirect('deactivate-performer-confirmation'); 
   } else {
     res.redirect('deactivate-performer-list');
+  }
+});
+
+router.get(/addSchool/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('schools-nav'); 
+  } else {
+    res.redirect('caseworker-nav');
   }
 });
 
