@@ -237,9 +237,17 @@ router.get(/addRetrospective/, function (req, res) {
   }
 });
 
-router.get(/updateContractor/, function (req, res) {
+router.get(/updateContractorP/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('update-contractor-list'); 
+    res.redirect('update-contractor-personal-list'); 
+  } else {
+    res.redirect('caseworker-nav');
+  }
+});
+
+router.get(/updateContractorB/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('update-contractor-banking-list'); 
   } else {
     res.redirect('caseworker-nav');
   }
@@ -253,7 +261,6 @@ router.get(/deactivateContractor/, function (req, res) {
   }
 });
 
-
 router.get(/deactivateAnotherContractor/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('deactivate-contractor-list'); 
@@ -261,4 +268,45 @@ router.get(/deactivateAnotherContractor/, function (req, res) {
     res.redirect('caseworker-nav');
   }
 });
+
+router.get(/addPerformer/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('performer-nav'); 
+  } else {
+    res.redirect('caseworker-nav');
+  }
+});
+
+router.get(/updatePerformer/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('update-performer-list'); 
+  } else {
+    res.redirect('caseworker-nav');
+  }
+});
+
+router.get(/assignPerformer/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('assign-performer-confirmation'); 
+  } else {
+    res.redirect('assign-performer-to-contractor-list');
+  }
+});
+
+router.get(/assignMorePerformer/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('assign-performer-to-contractor-list'); 
+  } else {
+    res.redirect('contractor-nav');
+  }
+});
+
+router.get(/deactivatePerformer/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('deactivate-performer-confirmation'); 
+  } else {
+    res.redirect('deactivate-performer-list');
+  }
+});
+
 module.exports = router;
