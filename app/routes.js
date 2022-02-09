@@ -317,4 +317,44 @@ router.get(/addSchool/, function (req, res) {
   }
 });
 
+router.get(/updateSchool/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('update-school-list'); 
+  } else {
+    res.redirect('caseworker-nav');
+  }
+});
+
+router.get(/deactivateSchool/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('deactivate-school-confirmation'); 
+  } else {
+    res.redirect('deactivate-school-list');
+  }
+});
+
+router.get(/deactivateAnotherSchool/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('deactivate-school-list'); 
+  } else {
+    res.redirect('caseworker-nav');
+  }
+});
+
+router.get(/assignSchool/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('assign-school-to-contractor-confirmation'); 
+  } else {
+    res.redirect('assign-school-to-contractor-list');
+  }
+});
+
+router.get(/assignMoreSchool/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('assign-school-to-contractor-list'); 
+  } else {
+    res.redirect('caseworker-nav');
+  }
+});
+
 module.exports = router;
