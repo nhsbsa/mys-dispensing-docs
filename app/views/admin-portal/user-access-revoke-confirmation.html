@@ -30,48 +30,59 @@
             <div class="nhsuk-main-wrapper" id="maincontent">
                 <div class="nhsuk-grid-row">
                     <div class="nhsuk-grid-column-two-thirds">
+                      <div class="nhsuk-back-link">
+                        <a class="nhsuk-back-link__link" href="javascript:history.back()">
+                          <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                          </svg>
+                          Go back</a>
+                      </div>
 
                           <header class="page-header">
                             <span class="heading-secondary">PA Admin Portal</span>
-                            <h1 class="nhsuk-heading-l govuk-heading-l">School details updated</h1>
+                            <h1 class="nhsuk-heading-l govuk-heading-l">Revoke user access confirmation</h1>
                           </header>
 
+                        <h2 class="nhsuk-heading-m ">
+                            The following users access has been revoked
+                        </h2>
                         <dl class="nhsuk-summary-list">
-
-                            <div class="nhsuk-summary-list__row">
-                              <dt class="nhsuk-summary-list__key">
-                                School name
-                              </dt>
-                              <dd class="nhsuk-summary-list__value">Tweedbank High School
-                              </dd>
-                            </div>
 
                               <div class="nhsuk-summary-list__row">
                                 <dt class="nhsuk-summary-list__key">
-                                  School postcode
+                                  Name
                                 </dt>
                                 <dd class="nhsuk-summary-list__value">
-                                  EH34 5GF
+                                  Gary Smith
+                                </dd>
+                              </div>
+
+                              <div class="nhsuk-summary-list__row">
+                                <dt class="nhsuk-summary-list__key">
+                                  Email address
+                                </dt>
+                                <dd class="nhsuk-summary-list__value">
+                                  a@b.c
                                 </dd>
                               </div>
 
                                 <div class="nhsuk-summary-list__row">
                                 <dt class="nhsuk-summary-list__key">
-                                  Associated ODS code
+                                  Job title
                                 </dt>
-                                <dd class="nhsuk-summary-list__value">
-                                  ODS1278
+                                <dd class="nhsuk-summary-list__value">Caseworker
                                 </dd>
                               </div>
 
                           </dl>
 
+
                   <div class="nhsuk-form-group">
-                  <form action="updateSchool"
+                  <form action="revokeUserAcceess"
                       class="form"
                       method="get">
                     <fieldset class="nhsuk-fieldset">
-                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">Do you want to update another school?</legend></h1>
+                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">Do you want to revoke user access for others?</legend></h1>
                         
                         <br>
                         <div class="nhsuk-radios nhsuk-radios--inline">

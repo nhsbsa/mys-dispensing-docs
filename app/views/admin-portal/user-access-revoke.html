@@ -36,40 +36,32 @@
 
                 <header class="page-header">
                   <span class="heading-secondary">PA Admin Portal</span>
-                  <h1 class="nhsuk-heading-l govuk-heading-l">Update performer details</h1>
+                  <h1 class="nhsuk-heading-l govuk-heading-l">Revoke user access</h1>
                 </header>
 
-                <h3>ODS code ODS1234</h3>
-                <br>
-                  <form action="update-performer-cya" method="get" class="form">
+                <form action="user-access-revoke-confirmation" method="get" class="form">
 
                   <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="contractor-name">
-                      User type - admin Y/N
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-2" id="contractor-name" name="contractor-name" type="text">
-                  </div>
-
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="contractor-name">
-                      Associated ODS code
+                      Name
                     </label>
                     <input class="nhsuk-input nhsuk-input--width-20" id="contractor-name" name="contractor-name" type="text">
                   </div>
 
                   <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="street-address">
-                      Name of performer
+                    <label class="nhsuk-label" for="email-address">
+                      Contractor email address
                     </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="street-address" name="street-address" type="text">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="email-address" name="email-address" type="text">
                   </div>
 
                   <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="email-address">
-                      Performer email address
+                      Job title
                     </label>
                     <input class="nhsuk-input nhsuk-input--width-20" id="email-address" name="email-address" type="text">
                   </div>
+
                   <br>
                       <button class="nhsuk-button" type="submit">
                                 Continue

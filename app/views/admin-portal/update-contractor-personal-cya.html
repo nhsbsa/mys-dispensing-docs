@@ -39,9 +39,9 @@
                       </div>
                           <header class="page-header">
                             <span class="heading-secondary">PA Admin Portal</span>
-                            <h1 class="nhsuk-heading-l govuk-heading-l">Check your answers</h1>
+                            <h1 class="nhsuk-heading-l govuk-heading-l">Confirm your changes</h1>
                           </header>
-
+                  <h3>These are the changes you have made:</h3>
 
                   <table class="table-form">
                   
@@ -56,29 +56,14 @@
                         <th role="columnheader" class="" scope="col">
                           Change to
                         </th>
-                        <th role="columnheader" class="" scope="col">
-                          Action
-                        </th>
                       </tr>
                     </thead>
-
-                    <tbody class="nhsuk-table__body">
-                      <tr role="row" class="nhsuk-table__row">
-                        <td class="nhsuk-table__cell ">ODS Code</td>
-                        <td class="nhsuk-table__cell ">Z9Y8X7</td>
-                        <td class="nhsuk-table__cell ">F3G4H5</td>
-                        <td class="nhsuk-table__cell--align-right">
-                        <a href="update-contractor-1">Change</a></td>
-                      </tr>
-                    </tbody>
 
                     <tbody class="nhsuk-table__body">
                       <tr role="row" class="nhsuk-table__row">
                         <td class="nhsuk-table__cell ">Name</td>
                         <td class="nhsuk-table__cell ">Specsavers</td>
                         <td class="nhsuk-table__cell ">Bayfields</td>
-                        <td class="nhsuk-table__cell--align-right">
-                        <a href="update-contractor-1">Change</a></td>
                       </tr>
                     </tbody>
                   
@@ -87,8 +72,6 @@
                         <td class="nhsuk-table__cell ">Address</td>
                         <td class="nhsuk-table__cell ">7 High Sreet, Peebles</td>
                         <td class="nhsuk-table__cell ">11 High Road, Newcastle</td>
-                        <td class="nhsuk-table__cell--align-right">
-                        <a href="update-contractor-1">Change</a></td>
                       </tr>
                     </tbody>
                   
@@ -97,8 +80,6 @@
                         <td class="nhsuk-table__cell ">Post Code</td>
                         <td class="nhsuk-table__cell ">EH11 1DX</td>
                         <td class="nhsuk-table__cell ">NE11 2EE</td>
-                        <td class="nhsuk-table__cell--align-right">
-                        <a href="update-contractor-1">Change</a></td>
                       </tr>
                     </tbody>
                   
@@ -107,20 +88,58 @@
                         <td class="nhsuk-table__cell ">Email address</td>
                         <td class="nhsuk-table__cell ">a@b.c</td>
                         <td class="nhsuk-table__cell ">d@e.f</td>
-                        <td class="nhsuk-table__cell--align-right">
-                        <a href="update-contractor-1">Change</a></td>
                       </tr>
                     </tbody>
 
                 </table>
 
-                        <a href="update-contractor-personal-confirmation" class="nhsuk-button">
-                            Continue
-                        </a>
 
-                    </div>
-                </div>
+
+
+
+
+                  <div class="nhsuk-form-group">
+                    <form action="updateContractor"
+                      class="form"
+                      method="get">
+                      <fieldset class="nhsuk-fieldset">
+                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">Do you confirm these changes are correct?</legend></h1>
+                        
+                        <br>
+                        <div class="nhsuk-radios nhsuk-radios--inline">
+                          <div class="nhsuk-radios__item">
+                            <input class="nhsuk-radios__input"
+                                id="add-1"
+                                name="radioInlineGroup"
+                                type="radio"
+                                value="Yes"> <label class="nhsuk-label nhsuk-radios__label"
+                                for="add-another-1">Yes</label>
+                          </div>
+                          <div class="nhsuk-radios__item">
+                            <input class="nhsuk-radios__input"
+                                id="add-2"
+                                name="radioInlineGroup"
+                                type="radio"
+                                value="no"> <label class="nhsuk-label nhsuk-radios__label"
+                                for="add-another-2">No (Go back and amend)</label>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <br>
+
+                      <button class="nhsuk-button"
+                        type="submit">Continue</button>
+      
+                    </form>
+                  </div>
+
+
+
+
+
             </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

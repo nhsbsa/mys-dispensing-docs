@@ -277,14 +277,6 @@ router.get(/addPerformer/, function (req, res) {
   }
 });
 
-router.get(/updatePerformer/, function (req, res) {
-  if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('update-performer-list'); 
-  } else {
-    res.redirect('caseworker-nav');
-  }
-});
-
 router.get(/assignPerformer/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('assign-performer-confirmation'); 
@@ -317,14 +309,6 @@ router.get(/addSchool/, function (req, res) {
   }
 });
 
-router.get(/updateSchool/, function (req, res) {
-  if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('update-school-list'); 
-  } else {
-    res.redirect('caseworker-nav');
-  }
-});
-
 router.get(/deactivateSchool/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('deactivate-school-confirmation'); 
@@ -352,6 +336,86 @@ router.get(/assignSchool/, function (req, res) {
 router.get(/assignMoreSchool/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('assign-school-to-contractor-list'); 
+  } else {
+    res.redirect('caseworker-nav');
+  }
+});
+
+router.get(/grantUserAcceess/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('user-access-grant'); 
+  } else {
+    res.redirect('leadmanager-nav');
+  }
+});
+
+router.get(/revokeUserAcceess/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('user-access-revoke'); 
+  } else {
+    res.redirect('leadmanager-nav');
+  }
+});
+
+router.get(/updateUserAcceess/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('user-access-update'); 
+  } else {
+    res.redirect('leadmanager-nav');
+  }
+});
+
+router.get(/approveRejectContractor/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('review-contractor-approve'); 
+  } else {
+    res.redirect('review-contractor-reject');
+  }
+});
+
+router.get(/updateContractor/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('update-contractor-personal-confirmation'); 
+  } else {
+    res.redirect('update-contractor-personal');
+  }
+});
+
+router.get(/updateBank/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('update-contractor-banking-confirmation'); 
+  } else {
+    res.redirect('update-contractor-banking');
+  }
+});
+
+router.get(/updatePerformerConfirm/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('update-performer-confirmation'); 
+  } else {
+    res.redirect('update-performer');
+  }
+});
+
+router.get(/updatePerformer/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('update-performer-list'); 
+  } else {
+    res.redirect('caseworker-nav');
+  }
+});
+
+router.get(/updateSchoolConfirmation/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('update-school-confirmation'); 
+  } else {
+    res.redirect('caseworker-nav');
+  }
+});
+
+router.get(/updateSchool/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('update-school-list'); 
   } else {
     res.redirect('caseworker-nav');
   }
