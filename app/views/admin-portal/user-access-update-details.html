@@ -39,23 +39,28 @@
                   <h1 class="nhsuk-heading-l govuk-heading-l">Update user access</h1>
                 </header>
 
-                <h3>Select a user to update</h3>
-                <form action="user-access-update-details" method="get" class="form">
+                <p>User douglas.caven@nhs.net</p>
+                <form action="user-access-update-cya" method="get" class="form">
+
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="contractor-name">
+                      Name
+                    </label>
+                    <input class="nhsuk-input nhsuk-input--width-20" id="contractor-name" name="contractor-name" type="text">
+                  </div>
 
                   <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="email-address">
-                      User email address
+                      Contractor email address
                     </label>
-                      <td  class="test-case" style="overflow: visible">
-                          <div>
-                              <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="vaccines" aria-required="true">
-                                  <option value="x">Select email address</option>
-                                  <option value="x">douglas.caven@nhs.net</option>
-                                  <option value="x">gary.smith@nhs.net</option>
-                                  <option value="x">allan.mcnish@nhs.net</option>
-                              </select>
-                          </div>
-                        </td>
+                    <input class="nhsuk-input nhsuk-input--width-20" id="email-address" name="email-address" type="text">
+                  </div>
+
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="email-address">
+                      Job title
+                    </label>
+                    <input class="nhsuk-input nhsuk-input--width-20" id="email-address" name="email-address" type="text">
                   </div>
 
                   <br>

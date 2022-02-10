@@ -39,7 +39,7 @@
                   <h1 class="nhsuk-heading-l govuk-heading-l">Grant user access</h1>
                 </header>
 
-                <form action="user-access-grant-confirmation" method="get" class="form">
+                <form action="user-access-grant-cya" method="get" class="form">
 
                   <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="contractor-name">
@@ -50,7 +50,7 @@
 
                   <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="email-address">
-                      Contractor email address
+                      User email address
                     </label>
                     <input class="nhsuk-input nhsuk-input--width-20" id="email-address" name="email-address" type="text">
                   </div>
@@ -59,8 +59,19 @@
                     <label class="nhsuk-label" for="email-address">
                       Job title
                     </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="email-address" name="email-address" type="text">
+                        <td  class="test-case" style="overflow: visible">
+                          <div>
+                              <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="vaccines" aria-required="true">
+                                  <option value="x">Select job title</option>
+                                  <option value="x">Caseworker</option>
+                                  <option value="x">Senior Caseworker</option>
+                                  <option value="x">Lead Manager</option>
+                              </select>
+                          </div>
+                        </td>
                   </div>
+
+
 
                   <br>
                       <button class="nhsuk-button" type="submit">

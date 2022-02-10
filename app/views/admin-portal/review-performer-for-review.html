@@ -40,82 +40,85 @@
 
                           <header class="page-header">
                             <span class="heading-secondary">PA Admin Portal</span>
-                            <h1 class="nhsuk-heading-l govuk-heading-l">Grant user access confirmation</h1>
+                            <h1 class="nhsuk-heading-l govuk-heading-l">Approve or reject performer</h1>
                           </header>
 
                         <h2 class="nhsuk-heading-m ">
-                            The following user has been granted access:
+                            The following performer details have been created or updated
                         </h2>
                         <dl class="nhsuk-summary-list">
 
-                              <div class="nhsuk-summary-list__row">
-                                <dt class="nhsuk-summary-list__key">
-                                  Name
-                                </dt>
-                                <dd class="nhsuk-summary-list__value">
-                                  Gary Smith
-                                </dd>
-                              </div>
+                            <div class="nhsuk-summary-list__row">
+                              <dt class="nhsuk-summary-list__key">
+                                User type - admin (Y/N)
+                              </dt>
+                              <dd class="nhsuk-summary-list__value">Y
+                              </dd>
+                            </div>
+
+                            <div class="nhsuk-summary-list__row">
+                              <dt class="nhsuk-summary-list__key">
+                                Associated ODS code
+                              </dt>
+                              <dd class="nhsuk-summary-list__value">ODS1234
+                              </dd>
+                            </div>
 
                               <div class="nhsuk-summary-list__row">
                                 <dt class="nhsuk-summary-list__key">
-                                  Email address
+                                  Name of performer
                                 </dt>
                                 <dd class="nhsuk-summary-list__value">
-                                  a@b.c
+                                  Nick Walton
                                 </dd>
                               </div>
 
-                                <div class="nhsuk-summary-list__row">
+                              <div class="nhsuk-summary-list__row">
                                 <dt class="nhsuk-summary-list__key">
-                                  Job title
+                                    Performer email address
                                 </dt>
-                                <dd class="nhsuk-summary-list__value">Caseworker
+                                <dd class="nhsuk-summary-list__value">
+                                    douglas.caven@nhs.net
                                 </dd>
                               </div>
-
-                          </dl>
-
+<br>
 
                   <div class="nhsuk-form-group">
-                  <form action="grantUserAccess"
+                    <form action="approveRejectPerformer"
                       class="form"
                       method="get">
-                    <fieldset class="nhsuk-fieldset">
-                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">Do you want to grant user access for others?</legend></h1>
-                        
-                        <br>
+                      <fieldset class="nhsuk-fieldset">
+
                         <div class="nhsuk-radios nhsuk-radios--inline">
-                        <div class="nhsuk-radios__item">
-                          <input class="nhsuk-radios__input"
-                              id="add-1"
-                              name="radioInlineGroup"
-                              type="radio"
-                              value="Yes"> <label class="nhsuk-label nhsuk-radios__label"
-                              for="add-another-1">Yes</label>
+                          <div class="nhsuk-radios__item">
+                            <input class="nhsuk-radios__input"
+                                id="add-1"
+                                name="radioInlineGroup"
+                                type="radio"
+                                value="Yes"> <label class="nhsuk-label nhsuk-radios__label"
+                                for="add-another-1">Approve</label>
+                          </div>
+                          <div class="nhsuk-radios__item">
+                            <input class="nhsuk-radios__input"
+                                id="add-2"
+                                name="radioInlineGroup"
+                                type="radio"
+                                value="no"> <label class="nhsuk-label nhsuk-radios__label"
+                                for="add-another-2">Reject</label>
+                          </div>
                         </div>
-                        <div class="nhsuk-radios__item">
-                          <input class="nhsuk-radios__input"
-                              id="add-2"
-                              name="radioInlineGroup"
-                              type="radio"
-                              value="no"> <label class="nhsuk-label nhsuk-radios__label"
-                              for="add-another-2">No</label>
-                        </div>
-                      </div>
-                    </fieldset>
-                    <br>
-                    
-                  </div>
-                  
+                      </fieldset>
+                      <br>
+
                       <button class="nhsuk-button"
                         type="submit">Continue</button>
       
-                </form>
+                    </form>
+                  </div>
 
-                    </div>
-                </div>
             </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

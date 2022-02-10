@@ -36,30 +36,26 @@
 
                 <header class="page-header">
                   <span class="heading-secondary">PA Admin Portal</span>
-                  <h1 class="nhsuk-heading-l govuk-heading-l">Revoke user access</h1>
+                  <h1 class="nhsuk-heading-l govuk-heading-l">Deactivate user access</h1>
                 </header>
 
-                <form action="user-access-revoke-confirmation" method="get" class="form">
-
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="contractor-name">
-                      Name
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="contractor-name" name="contractor-name" type="text">
-                  </div>
+                <h3>Select a user to deactivate</h3>
+                <form action="user-access-revoke-cya" method="get" class="form">
 
                   <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="email-address">
-                      Contractor email address
+                      User email address
                     </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="email-address" name="email-address" type="text">
-                  </div>
-
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="email-address">
-                      Job title
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="email-address" name="email-address" type="text">
+                        <td  class="test-case" style="overflow: visible">
+                          <div>
+                              <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="vaccines" aria-required="true">
+                                  <option value="x">Select email address</option>
+                                  <option value="x">douglas.caven@nhs.net</option>
+                                  <option value="x">gary.smith@nhs.net</option>
+                                  <option value="x">allan.mcnish@nhs.net</option>
+                              </select>
+                          </div>
+                        </td>
                   </div>
 
                   <br>

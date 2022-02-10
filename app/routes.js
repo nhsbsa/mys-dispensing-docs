@@ -341,11 +341,19 @@ router.get(/assignMoreSchool/, function (req, res) {
   }
 });
 
-router.get(/grantUserAcceess/, function (req, res) {
+router.get(/grantUserAccess/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('user-access-grant'); 
   } else {
     res.redirect('leadmanager-nav');
+  }
+});
+
+router.get(/confirmUserAccess/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('user-access-grant-confirmation'); 
+  } else {
+    res.redirect('user-access-grant');
   }
 });
 
@@ -357,7 +365,23 @@ router.get(/revokeUserAcceess/, function (req, res) {
   }
 });
 
-router.get(/updateUserAcceess/, function (req, res) {
+router.get(/confirmUserRevoke/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('user-access-revoke-confirmation'); 
+  } else {
+    res.redirect('user-access-revoke');
+  }
+});
+
+router.get(/updateUserAccess/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('user-access-update-confirmation'); 
+  } else {
+    res.redirect('user-access-update-details');
+  }
+});
+
+router.get(/updateMoreUserAccess/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('user-access-update'); 
   } else {
@@ -369,7 +393,15 @@ router.get(/approveRejectContractor/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('review-contractor-approve'); 
   } else {
-    res.redirect('review-contractor-reject');
+    res.redirect('review-contractor-reject-reason');
+  }
+});
+
+router.get(/approveRejectPerformer/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('review-performer-approve'); 
+  } else {
+    res.redirect('review-performer-reject-reason');
   }
 });
 
@@ -410,6 +442,38 @@ router.get(/updateSchoolConfirmation/, function (req, res) {
     res.redirect('update-school-confirmation'); 
   } else {
     res.redirect('caseworker-nav');
+  }
+});
+
+router.get(/reviewOthersFromContractor/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('review-submissions'); 
+  } else {
+    res.redirect('leadmanager-nav');
+  }
+});
+
+router.get(/reviewOthersFromSchool/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('review-submissions'); 
+  } else {
+    res.redirect('leadmanager-nav');
+  }
+});
+
+router.get(/approveRejectSchool/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('review-school-approve'); 
+  } else {
+    res.redirect('review-school-reject-reason');
+  }
+});
+
+router.get(/updateSchoolFromContractor/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('update-school'); 
+  } else {
+    res.redirect('review-rejections');
   }
 });
 
