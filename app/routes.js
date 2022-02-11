@@ -461,6 +461,14 @@ router.get(/reviewOthersFromSchool/, function (req, res) {
   }
 });
 
+router.get(/reviewOthersFromPerformer/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('review-submissions'); 
+  } else {
+    res.redirect('leadmanager-nav');
+  }
+});
+
 router.get(/approveRejectSchool/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('review-school-approve'); 
