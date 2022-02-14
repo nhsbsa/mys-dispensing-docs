@@ -279,7 +279,7 @@ router.get(/addPerformer/, function (req, res) {
 
 router.get(/assignPerformer/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('assign-performer-confirmation'); 
+    res.redirect('assign-performer-to-contractor-confirmation'); 
   } else {
     res.redirect('assign-performer-to-contractor-list');
   }

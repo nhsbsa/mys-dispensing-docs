@@ -40,45 +40,16 @@
 
                           <header class="page-header">
                             <span class="heading-secondary">PA Admin Portal</span>
-                            <h1 class="nhsuk-heading-l govuk-heading-l">Performer assigned to contractor</h1>
+                            <h1 class="nhsuk-heading-l govuk-heading-l">Assign performer to a contractor</h1>
                           </header>
-                         <h2 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">The following performer have been assigned to contractors:</legend></h2>
-                    
+
                         <dl class="nhsuk-summary-list">
                             <div class="nhsuk-summary-list__row">
                               <dt class="nhsuk-summary-list__key">
                                 Name of performer
                               </dt>
                                 <dt class="nhsuk-summary-list__key">
-                                Name of contractor
-                              </dt>
-                                <dt class="nhsuk-summary-list__key">
-                                Associated ODS Code
-                              </dt>
-                            </div>
-
-                              <div class="nhsuk-summary-list__row">
-                                <dd class="nhsuk-summary-list__value">
-                                  Gary Smith
-                                </dd>
-                                <dd class="nhsuk-summary-list__value">
-                                  Optical Illusion
-                                </dd>
-                                <dd class="nhsuk-summary-list__value">ODS1234
-                                </dd>
-                              </div>
-                          </dl>
-
-                          <dl class="nhsuk-summary-list">
-                            <div class="nhsuk-summary-list__row">
-                              <dt class="nhsuk-summary-list__key">
-                                Name of performer
-                              </dt>
-                              <dt class="nhsuk-summary-list__key">
-                                Name of contractor
-                              </dt>
-                                <dt class="nhsuk-summary-list__key">
-                                Associated ODS Code
+                                
                               </dt>
                             </div>
 
@@ -87,19 +58,37 @@
                                   Douglas Caven
                                 </dd>
                                 <dd class="nhsuk-summary-list__value">
-                                  Specsavers Newcastle North
-                                </dd>
-                                <dd class="nhsuk-summary-list__value">ODS5678
                                 </dd>
                               </div>
                           </dl>
 <br>
+   <dl class="nhsuk-summary-list">
+                            <div class="nhsuk-summary-list__row">
+                              <dt class="nhsuk-summary-list__key">
+                                Name of contractor
+                              </dt>
+                                <dt class="nhsuk-summary-list__key">
+                                Contractor ODS code
+                              </dt>
+                            </div>
+
+                              <div class="nhsuk-summary-list__row">
+                                <dd class="nhsuk-summary-list__value">
+                                  Specsavers Newcastle North
+                                </dd>
+                                <dd class="nhsuk-summary-list__value">ODS3579
+                                </dd>
+                              </div>
+                          </dl>
+<br>
+        
+
                   <div class="nhsuk-form-group">
-                  <form action="assignMorePerformer"
+                  <form action="assignPerformer"
                       class="form"
                       method="get">
                     <fieldset class="nhsuk-fieldset">
-                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">Do you want to assign any more performer to contractors?</legend></h1>
+                      <h1 class="nhsuk-fieldset__heading"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">Do you want to assign the selected performer to this contractor?</legend></h1>
                         
                         <br>
                         <div class="nhsuk-radios nhsuk-radios--inline">
