@@ -39,22 +39,31 @@
                   <h1 class="nhsuk-heading-l govuk-heading-l">Update performer details</h1>
                 </header>
 
-                <h3>ODS code ODS1234</h3>
+                <h3>ODS codes ODS3476, ODS3244</h3>
                 <br>
-                  <form action="update-performer-cya" method="get" class="form">
 
+                <form action="update-performer-cya" method="get" class="form">
                   <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="contractor-name">
-                      User type - admin Y/N
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-2" id="contractor-name" name="contractor-name" type="text">
-                  </div>
+                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+                        <label class="nhsuk-label" for="sort-code">
+                          Associated ODS codes
+                        </label>
 
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="contractor-name">
-                      Associated ODS code
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="contractor-name" name="contractor-name" type="text">
+                      <div class="nhsuk-date-input" id="sort-code">
+                        <div class="nhsuk-date-input__item">
+                          <div class="nhsuk-form-group">
+                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-8" id="sort-code-f2" name="sort-code-f2" type="text" pattern="[0-9]*" inputmode="numeric">
+                          </div>
+                        </div>
+
+                        <div class="nhsuk-date-input__item">
+                          <div class="nhsuk-form-group">
+                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-6" id="sort-code-s2" name="sort-code-s2" type="text" pattern="[0-9]*" inputmode="numeric">
+                          </div>
+                        </div>
+
+                      </div>
+                    </fieldset>
                   </div>
 
                   <div class="nhsuk-form-group">
@@ -74,7 +83,7 @@
                       <button class="nhsuk-button" type="submit">
                                 Continue
                       </button>
-                  </form>       
+                </form>       
             </div>
           </div>
         </div>

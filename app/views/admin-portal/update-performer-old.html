@@ -36,47 +36,46 @@
 
                 <header class="page-header">
                   <span class="heading-secondary">PA Admin Portal</span>
-                  <h1 class="nhsuk-heading-l govuk-heading-l">Create contractor personal details</h1>
+                  <h1 class="nhsuk-heading-l govuk-heading-l">Update performer details</h1>
                 </header>
 
-                <form action="create-contractor-2" method="get" class="form">
+                <h3>ODS codes ODS3476, ODS3244</h3>
+                <br>
 
+                <form action="update-performer-cya" method="get" class="form">
                   <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="contractor-name-test">
-                      Contractor contact name
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="contractor-name-test" name="contractor-name-test" type="text">
+                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+                        <label class="nhsuk-label" for="sort-code">
+                          Associated ODS codes
+                        </label>
+
+                      <div class="nhsuk-date-input" id="sort-code">
+                        <div class="nhsuk-date-input__item">
+                          <div class="nhsuk-form-group">
+                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-8" id="sort-code-f2" name="sort-code-f2" type="text" pattern="[0-9]*" inputmode="numeric">
+                          </div>
+                        </div>
+
+                        <div class="nhsuk-date-input__item">
+                          <div class="nhsuk-form-group">
+                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-6" id="sort-code-s2" name="sort-code-s2" type="text" pattern="[0-9]*" inputmode="numeric">
+                          </div>
+                        </div>
+
+                      </div>
+                    </fieldset>
                   </div>
 
                   <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="street-address">
-                      Contractor address (number and street)
+                      Name of performer
                     </label>
                     <input class="nhsuk-input nhsuk-input--width-20" id="street-address" name="street-address" type="text">
                   </div>
 
                   <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="optional-address">
-                      Contractor address (optional)
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="optional-address" name="optional-address" type="text">
-                  </div>
-
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="town-address">
-                      Contractor address (city)
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="town-address" name="town-address" type="text">
-                  </div>
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="post-code">
-                      Contractor post code
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="post-code" name="post-code" type="text">
-                  </div>
-                  <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="email-address">
-                      Contractor email address
+                      Performer email address
                     </label>
                     <input class="nhsuk-input nhsuk-input--width-20" id="email-address" name="email-address" type="text">
                   </div>
@@ -84,7 +83,7 @@
                       <button class="nhsuk-button" type="submit">
                                 Continue
                       </button>
-                  </form>       
+                </form>       
             </div>
           </div>
         </div>

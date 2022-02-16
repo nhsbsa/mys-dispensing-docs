@@ -41,12 +41,6 @@
 
                 <form action="create-performer-cya" method="get" class="form">
 
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="ass-ods-code">
-                      Associated ODS code
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="ass-ods-code" name="ass-ods-code" type="text">
-                  </div>
 
                   <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="performer-name">
@@ -55,7 +49,16 @@
                     <input class="nhsuk-input nhsuk-input--width-20" id="performer-name" name="performer-name" type="text">
                   </div>
 
-                
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="ass-ods-code">
+                      Associated ODS code
+                    </label>
+                    <span class="nhsuk-hint" id="date-of-birth-hint">
+                      If there is more than one ODS code enter all separated by a comma
+                    </span>
+                    <input class="nhsuk-input nhsuk-input--width-20" id="ass-ods-code" name="ass-ods-code" type="text">
+                  </div>
+            
                   <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="performer-email-address">
                       Performer email address

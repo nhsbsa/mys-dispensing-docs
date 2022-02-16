@@ -421,14 +421,6 @@ router.get(/updateBank/, function (req, res) {
   }
 });
 
-router.get(/updatePerformerConfirm/, function (req, res) {
-  if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('update-performer-confirmation'); 
-  } else {
-    res.redirect('update-performer');
-  }
-});
-
 router.get(/updatePerformer/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('update-performer-list'); 
@@ -490,6 +482,14 @@ router.get(/updateSchool/, function (req, res) {
     res.redirect('update-school-list'); 
   } else {
     res.redirect('caseworker-nav');
+  }
+});
+
+router.get(/updateOdsConfirm/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('update-performer-list'); 
+  } else {
+    res.redirect('update-performer-ods');
   }
 });
 
