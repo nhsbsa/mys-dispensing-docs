@@ -297,13 +297,13 @@ router.get(/deactivatePerformer/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('deactivate-performer-confirmation'); 
   } else {
-    res.redirect('deactivate-performer-list');
+    res.redirect('deactivate-performer-list-with-search');
   }
 });
 
 router.get(/deactivateAnotherPerformer/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('deactivate-performer-list'); 
+    res.redirect('deactivate-performer-list-with-search'); 
   } else {
     res.redirect('caseworker-nav');
   }
