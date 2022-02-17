@@ -36,52 +36,58 @@
 
                 <header class="page-header">
                   <span class="heading-secondary">PA Admin Portal</span>
-                  <h1 class="nhsuk-heading-l govuk-heading-l">Update contractor banking details</h1>
+                  <h1 class="nhsuk-heading-l govuk-heading-l">Update contractor personal details</h1>
                 </header>
-                <h3>Douglas Optician, ODS Code ODS4378</h3>
-                <br>
-                <form action="update-contractor-banking-cya" method="get" class="form">
+
+                <form action="update-contractor-personal-cya" method="get" class="form">
+
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="contractor-name">
+                      ODS codes
+                    </label>
+                    <input class="nhsuk-input nhsuk-input--width-10" id="contractor-name" name="contractor-name" type="text">
+                  </div>
+
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="contractor-name">
+                      Contractor contact name
+                    </label>
+                    <input class="nhsuk-input nhsuk-input--width-20" id="contractor-name" name="contractor-name" type="text">
+                  </div>
+
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="street-address">
+                      Contractor address (number and street)
+                    </label>
+                    <input class="nhsuk-input nhsuk-input--width-20" id="street-address" name="street-address" type="text">
+                  </div>
+
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="street-address">
+                      Contractor address (optional)
+                    </label>
+                    <input class="nhsuk-input nhsuk-input--width-20" id="street-address" name="street-address" type="text">
+                  </div>
 
                   <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="town-address">
-                      Bank account name
+                      Contractor address (city)
                     </label>
                     <input class="nhsuk-input nhsuk-input--width-20" id="town-address" name="town-address" type="text">
                   </div>
 
                   <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="post-code">
-                      Bank account number
+                      Contractor post code
                     </label>
                     <input class="nhsuk-input nhsuk-input--width-20" id="post-code" name="post-code" type="text">
                   </div>
 
                   <div class="nhsuk-form-group">
-                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
-                        <label class="nhsuk-label" for="sort-code">
-                          Bank sort code
-                        </label>
-
-                      <div class="nhsuk-date-input" id="sort-code">
-                        <div class="nhsuk-date-input__item">
-                          <div class="nhsuk-form-group">
-                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="sort-code-f2" name="sort-code-f2" type="text" pattern="[0-9]*" inputmode="numeric">
-                          </div>
-                        </div>
-
-                        <div class="nhsuk-date-input__item">
-                          <div class="nhsuk-form-group">
-                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="sort-code-s2" name="sort-code-s2" type="text" pattern="[0-9]*" inputmode="numeric">
-                          </div>
-                        </div>
-
-                        <div class="nhsuk-date-input__item">
-                          <div class="nhsuk-form-group">
-                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="sort-code-l2" name="sort-code-l2" type="text" pattern="[0-9]*" inputmode="numeric">
-                          </div>
-                        </div>
-                      </div>
-                    </fieldset>
+                    <label class="nhsuk-label" for="email-address">
+                      Contractor email address
+                    </label>
+                    <input class="nhsuk-input nhsuk-input--width-20" id="email-address" name="email-address" type="text">
                   </div>
                   <br>
                       <button class="nhsuk-button" type="submit">

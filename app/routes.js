@@ -223,7 +223,7 @@ router.get(/addEnterVaccine0110/, function (req, res) {
 
 router.get(/addContractor/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('contractor-nav'); 
+    res.redirect('create-contractor-1'); 
   } else {
     res.redirect('caseworker-nav');
   }
@@ -247,7 +247,7 @@ router.get(/updateContractorP/, function (req, res) {
 
 router.get(/updateContractorB/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('update-contractor-banking-list'); 
+    res.redirect('update-contractor-banking-select'); 
   } else {
     res.redirect('caseworker-nav');
   }
@@ -257,13 +257,13 @@ router.get(/deactivateContractor/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('deactivate-contractor-confirmation'); 
   } else {
-    res.redirect('deactivate-contractor-list');
+    res.redirect('deactivate-contractor-banking-select');
   }
 });
 
 router.get(/deactivateAnotherContractor/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('deactivate-contractor-list'); 
+    res.redirect('deactivate-contractor-banking-select'); 
   } else {
     res.redirect('caseworker-nav');
   }
@@ -298,6 +298,14 @@ router.get(/deactivatePerformer/, function (req, res) {
     res.redirect('deactivate-performer-confirmation'); 
   } else {
     res.redirect('deactivate-performer-list');
+  }
+});
+
+router.get(/deactivateAnotherPerformer/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('deactivate-performer-list'); 
+  } else {
+    res.redirect('caseworker-nav');
   }
 });
 
@@ -423,9 +431,17 @@ router.get(/updateBank/, function (req, res) {
 
 router.get(/updatePerformer/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('caseworker-nav'); 
+    res.redirect('update-performer-confirmation'); 
   } else {
     res.redirect('update-performer-record');
+  }
+});
+
+router.get(/updateAddPerformer/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('update-performer-list-with-search'); 
+  } else {
+    res.redirect('caseworker-nav');
   }
 });
 

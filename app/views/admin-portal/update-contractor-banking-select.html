@@ -36,53 +36,28 @@
 
                 <header class="page-header">
                   <span class="heading-secondary">PA Admin Portal</span>
-                  <h1 class="nhsuk-heading-l govuk-heading-l">Update contractor personal details</h1>
-                  <h3>ODS Code A1B2C3D</h3>
+                  <h1 class="nhsuk-heading-l govuk-heading-l">Update banking details</h1>
                 </header>
 
-                <form action="update-contractor-personal-cya" method="get" class="form">
-
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="contractor-name">
-                      Contractor contact name
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="contractor-name" name="contractor-name" type="text">
-                  </div>
-
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="street-address">
-                      Contractor address (number and street)
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="street-address" name="street-address" type="text">
-                  </div>
-
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="street-address">
-                      Contractor address (optional)
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="street-address" name="street-address" type="text">
-                  </div>
-
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="town-address">
-                      Contractor address (city)
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="town-address" name="town-address" type="text">
-                  </div>
-
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="post-code">
-                      Contractor post code
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="post-code" name="post-code" type="text">
-                  </div>
+                <h3>Select a contractor for update of banking details</h3>
+                <form action="update-contractor-banking-details" method="get" class="form">
 
                   <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="email-address">
-                      Contractor email address
+                      Contractor
                     </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="email-address" name="email-address" type="text">
+                        <td  class="test-case" style="overflow: visible">
+                          <div>
+                              <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="vaccines" aria-required="true">
+                                  <option value="x">Select contractor</option>
+                                  <option value="x">Optical Illusion</option>
+                                  <option value="x">Specs Are Us</option>
+                                  <option value="x">Stella House Optometry</option>
+                              </select>
+                          </div>
+                        </td>
                   </div>
+
                   <br>
                       <button class="nhsuk-button" type="submit">
                                 Continue

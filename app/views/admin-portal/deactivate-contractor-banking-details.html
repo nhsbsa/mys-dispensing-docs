@@ -25,7 +25,7 @@
           <div class="nhsuk-main-wrapper"
                 id="maincontent">
             <div class="nhsuk-grid-column-two-thirds">
-
+              
                       <div class="nhsuk-back-link">
                         <a class="nhsuk-back-link__link" href="javascript:history.back()">
                           <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
@@ -38,29 +38,31 @@
                   <span class="heading-secondary">PA Admin Portal</span>
                   <h1 class="nhsuk-heading-l govuk-heading-l">Update contractor banking details</h1>
                 </header>
-                <h3>Douglas Optician, ODS Code ODS4378</h3>
-                <br>
+
                 <form action="update-contractor-banking-cya" method="get" class="form">
 
                   <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="town-address">
-                      Bank account name
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="town-address" name="town-address" type="text">
-                  </div>
+                      <label class="nhsuk-label" for="bank-name">
+                          Name of bank/building society
+                      </label>
+                    <input class="nhsuk-input nhsuk-input--width-20" id="bank-name" name="bank-name" type="text">
+                  </div>          
 
                   <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="post-code">
-                      Bank account number
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="post-code" name="post-code" type="text">
-                  </div>
+                      <label class="nhsuk-label" for="account-number">
+                          Bank account Number
+                      </label>
+                    <input class="nhsuk-input nhsuk-input--width-10" id="account-number" name="account-number" type="text">
+                  </div>       
 
                   <div class="nhsuk-form-group">
                     <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
                         <label class="nhsuk-label" for="sort-code">
-                          Bank sort code
+                          Sort code
                         </label>
+                      <div class="nhsuk-hint" id="example-hint">
+                        For example, 40 46 08
+                      </div>
 
                       <div class="nhsuk-date-input" id="sort-code">
                         <div class="nhsuk-date-input__item">
@@ -83,11 +85,11 @@
                       </div>
                     </fieldset>
                   </div>
-                  <br>
+<br>
                       <button class="nhsuk-button" type="submit">
                                 Continue
                       </button>
-                  </form>       
+                    </form>       
             </div>
           </div>
         </div>
