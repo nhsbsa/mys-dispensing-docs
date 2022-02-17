@@ -271,7 +271,7 @@ router.get(/deactivateAnotherContractor/, function (req, res) {
 
 router.get(/addPerformer/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('performer-nav'); 
+    res.redirect('create-performer'); 
   } else {
     res.redirect('caseworker-nav');
   }
@@ -423,9 +423,9 @@ router.get(/updateBank/, function (req, res) {
 
 router.get(/updatePerformer/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('update-performer-list'); 
+    res.redirect('caseworker-nav'); 
   } else {
-    res.redirect('caseworker-nav');
+    res.redirect('update-performer-record');
   }
 });
 

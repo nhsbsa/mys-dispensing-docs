@@ -45,24 +45,15 @@
                 <form action="update-performer-cya" method="get" class="form">
                   <div class="nhsuk-form-group">
                     <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
-                        <label class="nhsuk-label" for="sort-code">
-                          Associated ODS codes
-                        </label>
 
-                      <div class="nhsuk-date-input" id="sort-code">
-                        <div class="nhsuk-date-input__item">
-                          <div class="nhsuk-form-group">
-                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-8" id="sort-code-f2" name="sort-code-f2" type="text" pattern="[0-9]*" inputmode="numeric">
-                          </div>
-                        </div>
 
-                        <div class="nhsuk-date-input__item">
-                          <div class="nhsuk-form-group">
-                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-6" id="sort-code-s2" name="sort-code-s2" type="text" pattern="[0-9]*" inputmode="numeric">
-                          </div>
-                        </div>
-
-                      </div>
+                      <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="street-address">
+                      Associated ODS codes
+                    </label>
+                    <input class="nhsuk-input nhsuk-input--width-20" id="street-address" name="street-address" type="text" value="ODS3476, ODS3244, ODS9988">
+                  </div>
+                  
                     </fieldset>
                   </div>
 
@@ -70,14 +61,14 @@
                     <label class="nhsuk-label" for="street-address">
                       Name of performer
                     </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="street-address" name="street-address" type="text">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="street-address" name="street-address" type="text" value="Gary Smith">
                   </div>
 
                   <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="email-address">
                       Performer email address
                     </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="email-address" name="email-address" type="text">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="email-address" name="email-address" type="text" value="gary.smith@gsp.com">
                   </div>
                   <br>
                       <button class="nhsuk-button" type="submit">
