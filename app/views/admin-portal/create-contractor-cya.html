@@ -39,12 +39,9 @@
                       </div>
                           <header class="page-header">
                             <span class="heading-secondary">PA Admin Portal</span>
-                            <h1 class="nhsuk-heading-l govuk-heading-l">Check your answers</h1>
+                            <h1 class="nhsuk-heading-l govuk-heading-l">Check new contractor details</h1>
                           </header>
 
-                        <h2 class="nhsuk-heading-m ">
-                            New contractor details
-                        </h2>
                         <dl class="nhsuk-summary-list">
 
                             <div class="nhsuk-summary-list__row">
@@ -60,6 +57,20 @@
                                 </a>
                               </dd>
                             </div>
+
+                              <div class="nhsuk-summary-list__row">
+                                <dt class="nhsuk-summary-list__key">
+                                    Email address
+                                </dt>
+                                <dd class="nhsuk-summary-list__value">
+                                    {{data['email-address']}}
+                                </dd>
+                                <dd class="nhsuk-summary-list__actions">
+                                    <a href="opto-referral-details">
+                                    Change<span class="nhsuk-u-visually-hidden"> contractor email</span>
+                                    </a>
+                                </dd>
+                              </div>
 
                               <div class="nhsuk-summary-list__row">
                                 <dt class="nhsuk-summary-list__key">
@@ -86,20 +97,6 @@
                                   <a href="opto-referral-details">
                                     Change<span class="nhsuk-u-visually-hidden"> contractor postcode</span>
                                   </a>
-                                </dd>
-                              </div>
-
-                              <div class="nhsuk-summary-list__row">
-                                <dt class="nhsuk-summary-list__key">
-                                    Email address
-                                </dt>
-                                <dd class="nhsuk-summary-list__value">
-                                    {{data['email-address']}}
-                                </dd>
-                                <dd class="nhsuk-summary-list__actions">
-                                    <a href="opto-referral-details">
-                                    Change<span class="nhsuk-u-visually-hidden"> contractor email</span>
-                                    </a>
                                 </dd>
                               </div>
 
