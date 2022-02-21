@@ -417,7 +417,7 @@ router.get(/updateContractor/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('update-contractor-personal-confirmation'); 
   } else {
-    res.redirect('update-contractor-personal');
+    res.redirect('update-contractor-personal-with-ods');
   }
 });
 
@@ -425,7 +425,7 @@ router.get(/updateBank/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('update-contractor-banking-confirmation'); 
   } else {
-    res.redirect('update-contractor-banking');
+    res.redirect('update-contractor-banking-details');
   }
 });
 
