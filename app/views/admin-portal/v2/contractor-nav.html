@@ -12,7 +12,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  MYS Dispensing Doctors
+  PA Admin Portal
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -25,6 +25,7 @@
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-full">
 
+
                       <div class="nhsuk-back-link">
                         <a class="nhsuk-back-link__link" href="javascript:history.back()">
                           <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
@@ -33,18 +34,17 @@
                           Go back</a>
                       </div>
 
-
       <!-- Change the page title here -->
       <h1>
         <span class="nhsuk-caption-xl nhsuk-caption--bottom">PA Admin Portal</span>
-          Lead Manager
+          Contractor Information
       </h1>
 
       <!-- Add your content here -->
       <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
 
       <p class="nhsuk-lede-text">
-        From here you can grant, revoke and amend user access, access and extract data, and review caseworker submissions.
+        Use the links on this page to create and amend contractor details, deactivate a contractor or view a contractor’s payments.
       </p>
       <hr>
             <ul class="nhsuk-grid-row nhsuk-card-group">
@@ -52,8 +52,8 @@
               <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
                 <div class="nhsuk-card nhsuk-card--clickable">
                   <div class="nhsuk-card__content">
-                    <h2 class="nhsuk-card__heading nhsuk-heading-m"><a href="user-access-grant">Grant user access</a></h2>
-                    <p class="nhsuk-card__description">Grant user access for this portal</p>
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m"><a href="create-contractor-1">Create a contractor</a></h2>
+                    <p class="nhsuk-card__description">Create a new contractor and add their personal and banking details</p>
                   </div>
                 </div>
               </li>
@@ -61,8 +61,8 @@
               <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
                 <div class="nhsuk-card nhsuk-card--clickable">
                   <div class="nhsuk-card__content">
-                    <h2 class="nhsuk-card__heading nhsuk-heading-m"><a href="user-access-revoke">Deactivate user access</a></h2>
-                    <p class="nhsuk-card__description">Deactivate user access for this portal</p>
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m"><a href="update-contractor-personal-list">Update contractor personal details</a></h2>
+                    <p class="nhsuk-card__description">Update a contractor’s ODS code, contact name, address or email address</p>
                   </div>
                 </div>
               </li>
@@ -70,8 +70,8 @@
               <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
                 <div class="nhsuk-card nhsuk-card--clickable">
                   <div class="nhsuk-card__content">
-                    <h2 class="nhsuk-card__heading nhsuk-heading-m"><a href="user-access-update">Update user access</a></h2>
-                    <p class="nhsuk-card__description">Create, amend and deactivate school details</p>
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m"><a href="update-contractor-banking-list">Update contractor banking details</a></h2>
+                    <p class="nhsuk-card__description">Update a contractor’s account name, account number or bank sort code</p>
                   </div>
                 </div>
               </li>
@@ -79,8 +79,8 @@
               <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
                 <div class="nhsuk-card nhsuk-card--clickable">
                   <div class="nhsuk-card__content">
-                    <h2 class="nhsuk-card__heading nhsuk-heading-m"><a href="access-and-extract-data">Access and extract data</a></h2>
-                    <p class="nhsuk-card__description">Access and extract data around payment files</p>
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m"><a href="deactivate-contractor-list">Deactivate contractor</a></h2>
+                    <p class="nhsuk-card__description"></p>
                   </div>
                 </div>
               </li>
@@ -88,17 +88,8 @@
               <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
                 <div class="nhsuk-card nhsuk-card--clickable">
                   <div class="nhsuk-card__content">
-                    <h2 class="nhsuk-card__heading nhsuk-heading-m"><a href="review-submissions">Review submissions</a></h2>
-                    <p class="nhsuk-card__description">Review, approve or reject caseworker submissions</p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
-                <div class="nhsuk-card nhsuk-card--clickable">
-                  <div class="nhsuk-card__content">
-                    <h2 class="nhsuk-card__heading nhsuk-heading-m"><a href="#">Previous payments</a></h2>
-                    <p class="nhsuk-card__description">View previous payments</p>
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m"><a href="#">View a contractor’s previous payments</a></h2>
+                    <p class="nhsuk-card__description"></p>
                   </div>
                 </div>
               </li>
