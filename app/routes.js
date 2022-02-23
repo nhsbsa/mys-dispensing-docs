@@ -311,7 +311,7 @@ router.get(/deactivateAnotherPerformer/, function (req, res) {
 
 router.get(/addSchool/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('schools-nav'); 
+    res.redirect('school-nav'); 
   } else {
     res.redirect('caseworker-nav');
   }
@@ -321,13 +321,13 @@ router.get(/deactivateSchool/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('deactivate-school-confirmation'); 
   } else {
-    res.redirect('deactivate-school-list');
+    res.redirect('deactivate-school-list-with-search');
   }
 });
 
 router.get(/deactivateAnotherSchool/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('deactivate-school-list'); 
+    res.redirect('deactivate-school-list-with-search'); 
   } else {
     res.redirect('caseworker-nav');
   }
@@ -445,6 +445,14 @@ router.get(/updateAddPerformer/, function (req, res) {
   }
 });
 
+router.get(/updateAddSchool/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('update-school-list-with-search'); 
+  } else {
+    res.redirect('caseworker-nav');
+  }
+});
+
 router.get(/updateSchoolConfirmation/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('update-school-confirmation'); 
@@ -495,9 +503,9 @@ router.get(/updateSchoolFromContractor/, function (req, res) {
 
 router.get(/updateSchool/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('update-school-list'); 
+    res.redirect('update-school-confirmation'); 
   } else {
-    res.redirect('caseworker-nav');
+    res.redirect('update-school-record');
   }
 });
 

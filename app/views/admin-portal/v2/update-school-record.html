@@ -36,40 +36,41 @@
 
                 <header class="page-header">
                   <span class="heading-secondary">PA Admin Portal</span>
-                  <h1 class="nhsuk-heading-l govuk-heading-l">Create school details</h1>
+                  <h1 class="nhsuk-heading-l govuk-heading-l">Update school details</h1>
                 </header>
 
-                <form action="create-school-cya" method="get" class="form">
-
+                <form action="update-school-cya" method="get" class="form">
+                  <div class="nhsuk-form-group">
+                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
 
                   <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="performer-name">
+                    <label class="nhsuk-label" for="street-address">
                       Name of school
                     </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="performer-name" name="performer-name" type="text">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="street-address" name="street-address" type="text" value="Gary Smith">
                   </div>
 
                   <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="ass-ods-code">
+                    <label class="nhsuk-label" for="street-address">
                       Associated ODS codes
                     </label>
-                    <span class="nhsuk-hint" id="date-of-birth-hint">
-                      If there is more than one ODS code enter all separated by a comma
-                    </span>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="ass-ods-code" name="ass-ods-code" type="text">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="street-address" name="street-address" type="text" value="ODS3476, ODS3244, ODS9988">
                   </div>
-            
+                  
+                    </fieldset>
+                  </div>
+
                   <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="performer-email-address">
-                      School postcode
+                    <label class="nhsuk-label" for="email-address">
+                      Postcode
                     </label>
-                    <input class="nhsuk-input nhsuk-input--width-10" id="performer-email-address" name="performer-email-address" type="text">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="email-address" name="email-address" type="text" value="EH45 9SA">
                   </div>
                   <br>
                       <button class="nhsuk-button" type="submit">
                                 Continue
                       </button>
-                  </form>       
+                </form>       
             </div>
           </div>
         </div>
