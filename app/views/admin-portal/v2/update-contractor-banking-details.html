@@ -36,7 +36,7 @@
 
                 <header class="page-header">
                   <span class="heading-secondary">PA Admin Portal</span>
-                  <h1 class="nhsuk-heading-l govuk-heading-l">Update contractor banking details</h1>
+                  <h1 class="nhsuk-heading-l govuk-heading-l">Update a contractor's banking details</h1>
                 </header>
 
                 <form action="update-contractor-banking-cya" method="get" class="form">
@@ -52,6 +52,10 @@
                       <label class="nhsuk-label" for="account-number">
                           Bank account number
                       </label>
+                      <div class="nhsuk-hint" id="example-hint">
+                        The account number should be 8 digits long. Enter zeros at the start if needed. For example 00123123
+                      </div>
+
                     <input class="nhsuk-input nhsuk-input--width-10" id="account-number" name="account-number" type="text">
                   </div>       
 
