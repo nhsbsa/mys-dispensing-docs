@@ -432,8 +432,10 @@ router.get(/updateBank/, function (req, res) {
 router.get(/updatePerformer/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('update-performer-confirmation'); 
-  } else {
+  } else if (req.query.radioInlineGroup === "No" ) {
     res.redirect('update-performer-record');
+  } else {
+    res.redirect('update-performer-cya-with-errors');
   }
 });
 
