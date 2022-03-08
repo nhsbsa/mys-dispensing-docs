@@ -442,8 +442,10 @@ router.get(/updatePerformer/, function (req, res) {
 router.get(/updateAddPerformer/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('update-performer-list-with-search'); 
-  } else {
+  } else if (req.query.radioInlineGroup === "No" ) {
     res.redirect('caseworker-nav');
+  } else {
+    res.redirect('update-performer-confirmation-with-errors');
   }
 });
 
