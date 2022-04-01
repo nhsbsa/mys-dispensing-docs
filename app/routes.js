@@ -221,6 +221,15 @@ router.get(/addEnterVaccine0110/, function (req, res) {
   }
 });
 
+router.get(/addEnterVaccineRef/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('table-dropdown-reformat5'); 
+  } else {
+    res.redirect('table-dropdown-reformat5');
+  }
+});
+
+
 router.get(/addContractor/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('create-contractor-1'); 
