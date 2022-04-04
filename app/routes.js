@@ -173,11 +173,11 @@ router.get(/addToSummary/, function (req, res) {
   }
 });
 
-router.get(/addEnterVaccine01/, function (req, res) {
+router.get(/addEnterVaccineA1/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('all-vaccine-table-dropdown-1-10'); 
   } else {
-    res.redirect('all-vaccine-table-dropdown-1-10');
+    res.redirect('start-page-new-4');
   }
 });
 
