@@ -1,0 +1,96 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-full-width.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  PPC
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+
+    <div class="nhsBSA-sidebar-wrapper">
+        <div class="nhsBSA-sidebar-content">
+
+        <div class="nhsuk-width-container-fluid">
+
+            <div class="nhsuk-main-wrapper" id="maincontent">
+                <div class="nhsuk-grid-row">
+                    <div class="nhsuk-grid-column-two-thirds">
+                      <div class="nhsuk-back-link">
+                        <a class="nhsuk-back-link__link" href="javascript:history.back()">
+                          <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                          </svg>
+                          Go back</a>
+                      </div>
+                        <div class="nhsuk-card nhsuk-card--confirmation nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+
+                          <div class="nhsuk-card__content">
+
+                            <h1 class="nhsuk-card__title nhsuk-u-margin-bottom-4">
+                              Prepayment complete
+                            </h1>
+
+                            <p class="nhsuk-u-font-size-24">
+                              <strong>We have received the PPC information.</strong>
+                            </p>
+
+                          </div>
+
+                        </div>
+
+                        <h2>Customer's prepayment details</h2>
+                        <p>Prepayment for:</p>
+                        <p>Certificate number: <b>869 467 589</b></p>
+                        <p>Started on: <b>18 April 2022</b></p>
+                        <p>Ends on: <b>17 April 2023</b></p>
+                        <p>The customer will receive a text or email with their certificate details.</p>
+                        <br>
+
+                        <h2>Payment</h2>
+                        <p>If the customer has not already paid, the charge is <b>£104.</b></p>
+                        <br>
+
+                        <h2>Dispensing prescriptions</h2>
+                        <p>You should ask customers for prepayment details.</p>
+                        <p>If they do not have them, tick 'Evidence not seen' on the prescription. Do not charge them.</p>
+                        <p>We prevent fraud by matching prepayment details on our database with prescriptions.</p>
+                        <br>
+
+                        <br>
+                        <h2>Save or print</h2>
+                        <p><a href"#">Print this</a></p>
+                        <p><a href"#">Save this page</a></p>
+                        <br>
+                    
+                      <a href="ppc-start-page" class="nhsuk-button">
+                          Finish
+                      </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+</div>
+{% endblock %}
