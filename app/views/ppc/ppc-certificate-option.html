@@ -39,8 +39,9 @@
           <h1 class="nhsuk-heading-l govuk-heading-l">Certificate option</h1>
       </header>
 
-          <h3>How would the patient like to get their PPC details?</h3> 
+          <h3>How would the patient like to receive their PPC details?</h3> 
 
+<!-- blocked out
                   <div class="nhsuk-warning-text">
                         <span class="nhsuk-warning-text__icon" aria-hidden="true">!</span>
                         <strong class="nhsuk-warning-text__text">
@@ -48,7 +49,16 @@
                           We do not send out plastic cards any more. They take time to reach people, and are costly to the NHS and the environment 
                         </strong>
                   </div>
-                  <br>
+ -->
+                  <div class="nhsuk-warning-callout">
+                    <h3 class="nhsuk-warning-callout__label">
+                      <span role="text">
+                        <span class="nhsuk-u-visually-hidden">Important: </span>
+                        Plastic cards
+                      </span>
+                    </h3>
+                    <p>We do not send out plastic cards any more. They take time to reach people, and are costly to the NHS and the environment.</p>
+                  </div>
 
               <p>We can send PPC details straight away by text and email. Or, you can write down or print the details for customer at the end of the transaction.</p>
               <p>You can give the customer a:</p>
@@ -59,7 +69,7 @@
               </ul>  
             
                   <div class="nhsuk-form-group">
-                    <form action="ppc-cya"
+                    <form action="ppcEmail"
                       class="form"
                       method="get">
                       <fieldset class="nhsuk-fieldset">
@@ -71,7 +81,7 @@
                                 name="radioInlineGroup"
                                 type="radio"
                                 value="No"> <label class="nhsuk-label nhsuk-radios__label"
-                                for="add-another-1">Send certificate details by email or text</label>
+                                for="add-another-1">Send certificate by post</label>
                           </div><br>
 
                           <div class="nhsuk-radios__item">
@@ -79,8 +89,8 @@
                                 id="add-2"
                                 name="radioInlineGroup"
                                 type="radio"
-                                value="No"> <label class="nhsuk-label nhsuk-radios__label"
-                                for="add-another-2">Write down or print certificate details</label>
+                                value="Yes"> <label class="nhsuk-label nhsuk-radios__label"
+                                for="add-another-2">Send certificate via email</label>
                           </div><br>
 
                       </fieldset>

@@ -522,11 +522,11 @@ router.get(/updateSchool/, function (req, res) {
   }
 });
 
-router.get(/updateOdsConfirm/, function (req, res) {
+router.get(/ppcEmail/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('update-performer-list'); 
+    res.redirect('ppc-customer-email1'); 
   } else {
-    res.redirect('update-performer-ods');
+    res.redirect('ppc-cya');
   }
 });
 
