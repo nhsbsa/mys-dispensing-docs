@@ -36,10 +36,11 @@
       <!-- Change the page title here -->
       <header class="page-header">
           <span class="heading-secondary">Sell a Prescription Prepayment Certificate (PPC)</span>
-          <h1 class="nhsuk-heading-l govuk-heading-l">Certificate option</h1>
+          <h1 class="nhsuk-heading-l govuk-heading-l">Certificate receipt option</h1>
       </header>
 
-          <h3>How would the patient like to receive their PPC details?</h3> 
+          <h3>How would the customer like to receive their PPC?</h3> 
+          <p>We can send PPC details immediately by email. We can also send details by post, but these will take longer to arrive.</p>
 
 <!-- blocked out
                   <div class="nhsuk-warning-text">
@@ -49,25 +50,8 @@
                           We do not send out plastic cards any more. They take time to reach people, and are costly to the NHS and the environment 
                         </strong>
                   </div>
- -->
-                  <div class="nhsuk-warning-callout">
-                    <h3 class="nhsuk-warning-callout__label">
-                      <span role="text">
-                        <span class="nhsuk-u-visually-hidden">Important: </span>
-                        Plastic cards
-                      </span>
-                    </h3>
-                    <p>We do not send out plastic cards any more. They take time to reach people, and are costly to the NHS and the environment.</p>
-                  </div>
-
-              <p>We can send PPC details straight away by text and email. Or, you can write down or print the details for customer at the end of the transaction.</p>
-              <p>You can give the customer a:</p>
-              <ul>
-                <li>certificate number</li>
-                <li>start date</li>
-                <li>end date</li>
-              </ul>  
-            
+-->
+                
                   <div class="nhsuk-form-group">
                     <form action="ppcEmail"
                       class="form"
@@ -80,8 +64,8 @@
                                 id="add-1"
                                 name="radioInlineGroup"
                                 type="radio"
-                                value="No"> <label class="nhsuk-label nhsuk-radios__label"
-                                for="add-another-1">Send certificate by post</label>
+                                value="Yes"> <label class="nhsuk-label nhsuk-radios__label"
+                                for="add-another-1">Email</label>
                           </div><br>
 
                           <div class="nhsuk-radios__item">
@@ -89,15 +73,37 @@
                                 id="add-2"
                                 name="radioInlineGroup"
                                 type="radio"
-                                value="Yes"> <label class="nhsuk-label nhsuk-radios__label"
-                                for="add-another-2">Send certificate via email</label>
+                                value="No"> <label class="nhsuk-label nhsuk-radios__label"
+                                for="add-another-2">Post</label>
                           </div><br>
 
-                      </fieldset>
-                      <br>
+                          <div class="nhsuk-radios__item">
+                            <input class="nhsuk-radios__input"
+                                id="add-2"
+                                name="radioInlineGroup"
+                                type="radio"
+                                value="No"> <label class="nhsuk-label nhsuk-radios__label"
+                                for="add-another-2">Text</label>
+                          </div>
+                          <br>
 
+                      </fieldset>
+
+                  <p>You can also write down or print the details for your customer. These will be shown at the end of the application.</p>
+
+                  <div class="nhsuk-warning-callout">
+                    <h3 class="nhsuk-warning-callout__label">
+                      <span role="text">
+                        <span class="nhsuk-u-visually-hidden">Important: </span>
+                        Plastic cards
+                      </span>
+                    </h3>
+                    <p>We no longer send out plastic cards for PPCs. They take longer to reach people and are costly to both the NHS and the environment.</p>
+                  </div>
+                      
                       <button class="nhsuk-button"
                         type="submit">Continue</button>
+
       
                     </form>
                   </div>
