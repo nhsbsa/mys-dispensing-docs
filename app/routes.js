@@ -522,11 +522,23 @@ router.get(/updateSchool/, function (req, res) {
   }
 });
 
-router.get(/ppcEmail/, function (req, res) {
+router.get(/updateAddPerformer/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('ppc-customer-email1'); 
+    res.redirect('update-performer-list-with-search'); 
+  } else if (req.query.radioInlineGroup === "No" ) {
+    res.redirect('caseworker-nav');
   } else {
-    res.redirect('ppc-cya');
+    res.redirect('update-performer-confirmation-with-errors');
+  }
+});
+
+router.get(/ppcEmail/, function (req, res) {
+  if (req.query.radioInlineGroup === "Email" ) {
+    res.redirect('ppc-customer-email1'); 
+  } else if (req.query.radioInlineGroup === "Address" ) {
+      res.redirect('ppc-customer-address'); 
+    } else {
+    res.redirect('ppc-customer-mobile-no');
   }
 });
 
