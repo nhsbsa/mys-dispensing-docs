@@ -534,11 +534,9 @@ router.get(/updateAddPerformer/, function (req, res) {
 
 router.get(/ppcEmail/, function (req, res) {
   if (req.query.radioInlineGroup === "Email" ) {
-    res.redirect('ppc-customer-email1'); 
-  } else if (req.query.radioInlineGroup === "Address" ) {
-      res.redirect('ppc-customer-address'); 
+    res.redirect('ppc-customer-email1');
     } else {
-    res.redirect('ppc-customer-mobile-no');
+    res.redirect('ppc-cya');
   }
 });
 
