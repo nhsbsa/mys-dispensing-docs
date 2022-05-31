@@ -12,7 +12,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  PPC
+  HRT
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -35,20 +35,30 @@
       <!-- Change the page title here -->
       
       <header class="page-header">
-          <span class="heading-secondary">Sell a Prescription Prepayment Certificate (PPC)</span>
-          <h1 class="nhsuk-heading-l govuk-heading-l">The customer is nearly 60</h1>
+          <span class="heading-secondary">Sell a Hormone Repacement Therapy Prescription Prepayment Certificate (HRT PPC)</span>
+          <h1 class="nhsuk-heading-l govuk-heading-l">What is the customer's NHS number?</h1>
       </header>
 
-        <p>Make sure they know they will get free prescriptions when they are 60 years old.</p>
-        <p>It may be more cost-effective for them to prepay for 3 months at a time rather than buy a 12 month PPC.</p>
-<br>      
-          
-          <form action="#" method="get" class="form">
+                  <label class="nhsuk-label" for="part1-other-surname">
+                      You do not have to give us their NHS number. We ask for it because (text required here). Select Continue if you do not answer this question.
+                  </label>
+<br>
+          <form action="hrtppc-customer-address" method="get" class="form">
 
+                  <label class="nhsuk-label" for="part1-other-surname">
+                      NHS number (optional). For example, 485 777 3456.
+                  </label>
+                  <div class="nhsuk-form-group">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="surname" name="surname" type="text">
+                  </div><br>
+
+                  <br>
                       <button class="nhsuk-button" type="submit">
                                 Continue
                       </button>
           </form>       
+      
+
 
     </div>
   </div>

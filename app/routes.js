@@ -540,4 +540,12 @@ router.get(/ppcEmail/, function (req, res) {
   }
 });
 
+router.get(/hrtPpcEmail/, function (req, res) {
+  if (req.query.radioInlineGroup === "Email" ) {
+    res.redirect('hrtppc-customer-email1');
+    } else {
+    res.redirect('hrtppc-cya');
+  }
+});
+
 module.exports = router;
