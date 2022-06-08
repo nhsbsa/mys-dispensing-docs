@@ -548,4 +548,20 @@ router.get(/hrtPpcEmail/, function (req, res) {
   }
 });
 
+router.get(/ppcHrtQuestion/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('ppc-hrt-ppc-start-page');
+    } else {
+    res.redirect('ppc-hrt-hrt-start-page');
+  }
+});
+
+router.get(/ppcPpcEmail/, function (req, res) {
+  if (req.query.radioInlineGroup === "Email" ) {
+    res.redirect('ppc-or-hrt-ppc-customer-email1');
+    } else {
+    res.redirect('ppc-or-hrt-ppc-cya');
+  }
+});
+
 module.exports = router;

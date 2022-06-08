@@ -12,7 +12,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  HRT
+  PPC
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -35,14 +35,12 @@
 
       <!-- Change the page title here -->
       <header class="page-header">
-          <span class="heading-secondary">Sell a Hormone Repacement Therapy Prescription Prepayment Certificate (HRT PPC)</span>
-          <h1 class="nhsuk-heading-l govuk-heading-l">Does the customer want to buy the HRT PPC?</h1>
+          <span class="heading-secondary">Sell a PPC or HRT PPC</span>
+          <h1 class="nhsuk-heading-l govuk-heading-l">Are you selling a Prescription Prepayment Certificate (PPC) or a Hormone Replacement Therapy Prescription Prepayment Certificate (HRP PPC)?</h1>
       </header>
 
-      <p>A prescription costs £9.35 per item, but prepaying for an unlimited number of HRT prescriptions is a one time payment of £18.70 for 12 months.</p>
-
                   <div class="nhsuk-form-group">
-                    <form action="hrtppc-sold-date"
+                    <form action="ppcHrtQuestion"
                       class="form"
                       method="get">
                       <fieldset class="nhsuk-fieldset">
@@ -53,8 +51,8 @@
                                 id="add-1"
                                 name="radioInlineGroup"
                                 type="radio"
-                                value="No"> <label class="nhsuk-label nhsuk-radios__label"
-                                for="add-another-1">No - individual prescriptions <b>£9.35</b></label>
+                                value="Yes"> <label class="nhsuk-label nhsuk-radios__label"
+                                for="add-another-1">PPC</label>
                           </div><br>
 
                           <div class="nhsuk-radios__item">
@@ -63,7 +61,7 @@
                                 name="radioInlineGroup"
                                 type="radio"
                                 value="No"> <label class="nhsuk-label nhsuk-radios__label"
-                                for="add-another-2">Yes - 12 months <b>£18.70</b></label>
+                                for="add-another-2">PPC HRT</label>
                           </div><br>
 
                       </fieldset>
