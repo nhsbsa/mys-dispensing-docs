@@ -548,11 +548,19 @@ router.get(/hrtPpcEmail/, function (req, res) {
   }
 });
 
+router.get(/hrtHrtEmail/, function (req, res) {
+  if (req.query.radioInlineGroup === "Email" ) {
+    res.redirect('ppc-or-hrt-hrt-customer-email1');
+    } else {
+    res.redirect('ppc-or-hrt-hrt-cya');
+  }
+});
+
 router.get(/ppcHrtQuestion/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('ppc-hrt-ppc-start-page');
+    res.redirect('ppc-or-hrt-ppc-start-page');
     } else {
-    res.redirect('ppc-hrt-hrt-start-page');
+    res.redirect('ppc-or-hrt-hrt-start-page');
   }
 });
 
