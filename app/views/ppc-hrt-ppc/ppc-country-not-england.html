@@ -29,16 +29,69 @@
       </div><!-- Change the page title here -->
       <header class="page-header">
         <span class="heading-secondary">Sell a PPC or an HRT PPC</span>
-        <h1 class="nhsuk-heading-l govuk-heading-l">Your customer is entitled to free prescriptions</h1>
       </header>
-      <p>As your customer is under 16 or over 60, they are entitled to free prescriptions. They do not need to buy a PPC or an HRT PPC.</p>
+    
+
+          <div class="nhsuk-warning-callout">
+            <h3 class="nhsuk-warning-callout__label">
+              <span role="text">
+                <span class="nhsuk-u-visually-hidden">Important: </span>
+                Important information:
+              </span>
+            </h3>
+                  <ul>
+                    <li>The postcode you provided might be outside of England. If you live outside of England, you may be entitled to free prescriptions.</li>
+                    <li>Before buying an HRT PPC, check if you're entitled to free NHS prescriptions and other help with health costs using our <a href="#">eligibility checker.</a></li>  
+                  </ul> 
+          </div>
+
+      <header class="page-header">
+        <h1 class="nhsuk-heading-l govuk-heading-l">Do you want to continue?</h1>
+      </header>
+    
+
+<fieldset class="nhsuk-fieldset">
+
+  <div class="nhsuk-form-group">
+
+    <div class="nhsuk-radios">
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-hints-1" name="example-hints" type="radio" value="yes">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
+          Yes
+        </label>
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-hints-2" name="example-hints" type="radio" value="no">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
+          No
+        </label>
+      </div>
+
+    </div>
+  </div>
+
+</fieldset>
+
+
+
+
+ <br>
       <form action="#"
             class="form"
             method="get">
         <button class="nhsuk-button"
-              type="submit">Continue</button>
+              type="submit">Next</button>
       </form>
+            
+      <a href="#">Cancel</a>
+
     </div>
-  </div>{% endblock %}
+
+  </div>
+  
+{% endblock %}
 </body>
 </html>
