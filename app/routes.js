@@ -572,4 +572,12 @@ router.get(/ppcPpcEmail/, function (req, res) {
   }
 });
 
+router.get(/ppcNoteducation/, function (req, res) {
+  if (req.query.radioInlineGroup === "Email" ) {
+    res.redirect('ppc-16-18');
+    } else {
+    res.redirect('ppc-16-18-ko');
+  }
+});
+
 module.exports = router;
