@@ -550,9 +550,9 @@ router.get(/hrtPpcEmail/, function (req, res) {
 
 router.get(/hrtHrtEmail/, function (req, res) {
   if (req.query.radioInlineGroup === "Email" ) {
-    res.redirect('ppc-or-hrt-hrt-customer-email1');
+    res.redirect('hrt-customer-email1');
     } else {
-    res.redirect('ppc-or-hrt-hrt-cya');
+    res.redirect('hrt-cya');
   }
 });
 

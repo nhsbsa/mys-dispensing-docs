@@ -36,24 +36,11 @@
       <!-- Change the page title here -->
       <header class="page-header">
           <span class="heading-secondary">Sell a Prescription Prepayment Certificate (PPC)</span>
-          <h1 class="nhsuk-heading-l govuk-heading-l">Certificate receipt option</h1>
+          <h1 class="nhsuk-heading-l govuk-heading-l">How long does the customer want the PPC to last?</h1>
       </header>
 
-          <h3>How would the customer like to receive their PPC?</h3> 
-          <p>We can send PPC details immediately by email. We can also send details by post, but these will take longer to arrive.</p>
-
-<!-- blocked out
-                  <div class="nhsuk-warning-text">
-                        <span class="nhsuk-warning-text__icon" aria-hidden="true">!</span>
-                        <strong class="nhsuk-warning-text__text">
-                          <span class="nhsuk-warning-text__assistive"></span>
-                          We do not send out plastic cards any more. They take time to reach people, and are costly to the NHS and the environment 
-                        </strong>
-                  </div>
--->
-                
                   <div class="nhsuk-form-group">
-                    <form action="ppcPpcEmail"
+                    <form action="ppc-or-hrt-ppc-sold-date"
                       class="form"
                       method="get">
                       <fieldset class="nhsuk-fieldset">
@@ -64,8 +51,8 @@
                                 id="add-1"
                                 name="radioInlineGroup"
                                 type="radio"
-                                value="Email"> <label class="nhsuk-label nhsuk-radios__label"
-                                for="add-another-1">Email</label>
+                                value="No"> <label class="nhsuk-label nhsuk-radios__label"
+                                for="add-another-1">3 months <b>£30.25</b></label>
                           </div><br>
 
                           <div class="nhsuk-radios__item">
@@ -73,37 +60,16 @@
                                 id="add-2"
                                 name="radioInlineGroup"
                                 type="radio"
-                                value="Address"> <label class="nhsuk-label nhsuk-radios__label"
-                                for="add-another-2">Post</label>
+                                value="No"> <label class="nhsuk-label nhsuk-radios__label"
+                                for="add-another-2">12 months <b>£108.10</b></label>
                           </div><br>
-
-                          <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input"
-                                id="add-2"
-                                name="radioInlineGroup"
-                                type="radio"
-                                value="Address"> <label class="nhsuk-label nhsuk-radios__label"
-                                for="add-another-2">Print only</label>
-                          </div><br>
-
 
                       </fieldset>
+                      <br>
 
-                  <p>If your customer chooses email or post, you can still either write down the details or print the certificate off from the confirmation screen at the end of the application.</p>
-
-                  <div class="nhsuk-warning-callout">
-                    <h3 class="nhsuk-warning-callout__label">
-                      <span role="text">
-                        <span class="nhsuk-u-visually-hidden">Important: </span>
-                        Plastic cards
-                      </span>
-                    </h3>
-                    <p>We no longer send out plastic cards for PPCs. They take longer to reach people and are costly to both the NHS and the environment.</p>
-                  </div>
-                      
                       <button class="nhsuk-button"
                         type="submit">Continue</button>
-
+      
                     </form>
                   </div>
 
