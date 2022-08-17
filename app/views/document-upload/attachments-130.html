@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/v7/ihs-claim-ref-130">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <form class="form" action="/v7/attachments-add-130" method="post">
+
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-label--l" for="file-upload-1">
+          <h1 class="govuk-heading-l">Upload evidence</h1>
+          </label>
+          
+          <span id="file-upload-1-hint" class="govuk-hint">
+            <p>Evidence should be payslips for your work in a health and social care job for 6 months or more. We need these payslip so we can match you with the eligbility criteria.</p>
+
+            <p>You can upload your evidence as a scanned copy or photo of the original. </p>
+         
+          <p>Your uploaded file must be:</p>
+          <ul class="govuk-list govuk-list--bullet">
+              <li>a jpg, jpeg, bmp, png or pdf</li>
+              <li>a file size no larger than 2MB</li>
+              <li>show [your name] and [the date]</li>
+            </ul>
+          </span>
+          
+          <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file" aria-describedby="file-upload-1-hint">
+          </div>
+          
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
