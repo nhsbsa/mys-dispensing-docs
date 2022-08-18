@@ -12,7 +12,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  HEE
+  MYS Dispensing Doctors
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -23,11 +23,9 @@
 <!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
 <div class="nhsBSA-sidebar-container">
-
-    <div class="nhsBSA-sidebar-wrapper">
-        <div class="nhsBSA-sidebar-content">
-
-        <div class="nhsuk-width-container-fluid">
+  <div class="nhsBSA-sidebar-wrapper">
+    <div class="nhsBSA-sidebar-content">
+      <div class="nhsuk-width-container-fluid">
 
             <div class="nhsuk-main-wrapper" id="maincontent">
                 <div class="nhsuk-grid-row">
@@ -39,33 +37,38 @@
                           </svg>
                           Go back</a>
                       </div>
-                        <div class="nhsuk-card nhsuk-card--confirmation nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+                          <header class="page-header">
+                            <span class="heading-secondary">April 2022 submission</span>
+                            <h1 class="nhsuk-heading-l govuk-heading-l">Select a vaccine type</h1>
+                          </header>
 
-                          <div class="nhsuk-card__content">
-                            <h1 class="nhsuk-card__title nhsuk-u-margin-bottom-4">
-                              Submission complete
-                            </h1>
-                          </div>
+                        <h3>Select a type of vaccine administered by Nurse Ratched for April 2022.</h3>
 
-                        </div>
-
-                        <h2>What happens next</h2>
-                        <p>We will send an email to <dynamic email> confirming your submission.</p>
-                        <p>Payment will be made as part of your payment by the NHSBSA for <dynamic date (Month Year)> submissions.</p>
-                        <br>
                     
-                      <a href="ppc-or-hrt-generic-start-page" class="nhsuk-button">
-                          Finish
-                      </a>
+                        <td  class="test-case" style="overflow: visible">
+                          <div>
+                              <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="vaccines" aria-required="true">
+                                  <option value="x">Choose vaccine type</option>
+                                  <option value="x">Influenza</option>
+                                  <option value="x">Typhoid</option>
+                                  <option value="x">Hepatitis A</option>
+                                  <option value="x">Hepatitis B</option>
+                                  <option value="x">Pneumococcal</option>
+                                  <option value="x">Memingococcal</option>
+                              </select>
+                          </div>
+                        </td>
+
+
+<br>
+<a href="table-dropdown-no-records" class="nhsuk-button">Continue</a>
+              
 
                     </div>
-
                 </div>
             </div>
-
-        </div>
+      </div>
     </div>
-    </div>
-
+  </div>
 </div>
 {% endblock %}
