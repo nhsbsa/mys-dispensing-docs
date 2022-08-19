@@ -580,4 +580,12 @@ router.get(/ppcNoteducation/, function (req, res) {
   }
 });
 
+router.get(/addAnotherClaim/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('hee-declaration');
+    } else {
+    res.redirect('hee-trainee-months');
+  }
+});
+
 module.exports = router;

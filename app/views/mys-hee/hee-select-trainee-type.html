@@ -40,25 +40,11 @@
 <br>
         <h3>Newcastle Central Pharmacy<br>ODS Code: FAAAA<br>Address: 1 High Street, Newcastle, NE1 1XX</h3>
 <br>
-        <h1>Create a trainee</h1>
+        <h1>Select trainee type</h1>
 
-          <div class="nhsuk-form-group">
-            <label class="nhsuk-label" for="input-width-20">
-              First name
-            </label>
-            <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
-          </div>
-
-          <div class="nhsuk-form-group">
-            <label class="nhsuk-label" for="input-width-20">
-              Surname
-            </label>
-            <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
-          </div>
-<br>
         <p>Trainee type
 
-              <form action="ppc-hrt-ppc-customer-nhs-no" method="get" class="form">
+              <form action="hee-create-trainee-confirmation" method="get" class="form">
                   <fieldset class="nhsuk-fieldset">
 
                     <div class="nhsuk-form-group">       
@@ -67,7 +53,7 @@
                               <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="vaccines" aria-required="true">
                                   <option value="#">Select a trainee</option>
                                   <option value="#">Foundation Pharmacist</option>
-                                  <option value="#">Pharmacy Technician</option>
+                                  <option value="#">Pre-registration Trainee Pharmacy Technician (PTPT)</option>
                               </select>
                           </div>
                         </td>                       
@@ -75,12 +61,13 @@
 
                   </fieldset>
 <br><br>
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="input-width-10">
-                      GPhC Number (if Foundation Pharmacist)
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-10" id="input-width-10" name="test-width-10" type="text">
-                  </div>
+                  <h2>How many are you claiming for?</h2>
+                    <div class="nhsuk-form-group">
+                        <label class="nhsuk-label" for="input-width-2">
+                            Maximum of 15
+                        </label>
+                      <input class="nhsuk-input nhsuk-input--width-2" id="input-width-2" name="test-width-2" type="text">
+                    </div>
                   
                   <br>           
                       <button class="nhsuk-button" type="submit">
