@@ -588,4 +588,12 @@ router.get(/addAnotherClaim/, function (req, res) {
   }
 });
 
+router.get(/addAnotherTrainee/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('hee-select-trainee-type');
+    } else {
+    res.redirect('hee-foundation-pharmacist-cya');
+  }
+});
+
 module.exports = router;
