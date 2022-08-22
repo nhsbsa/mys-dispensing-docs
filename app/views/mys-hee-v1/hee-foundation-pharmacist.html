@@ -12,7 +12,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  PPC
+  HEE
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -35,31 +35,44 @@
       <!-- Change the page title here -->
       
       <header class="page-header">
-          <span class="heading-secondary">Sell a Prescription Prepayment Certificate (PPC)</span>
-          <h1 class="nhsuk-heading-l govuk-heading-l">What is the customer's NHS number?</h1>
-      </header>
-
-                  <label class="nhsuk-label" for="part1-other-surname">
-                      You do not have to give us their NHS number. By telling us, we can match them to their NHS record and stop the incorrect issue of any penalty charge notices.
-                  </label>
+          <span class="heading-secondary">2022 - 2023 Foundation Training for Trainee Pharmacists: Allocation of Funding</span>
+      </header>  
 <br>
-          <form action="ppc-or-hrt-ppc-duration" method="get" class="form">
+        <h3>Newcastle Central Pharmacy<br>ODS Code: FAAAA<br>Address: 1 High Street, Newcastle, NE1 1XX</h3>
+<br>
+        <h3>Trainee type: Foundation Pharmacist - 1</h3>
 
-                  <label class="nhsuk-label" for="part1-other-surname">
-                      Their NHS number is a 10 digit number. For example, 485 777 3456.
-                  </label>
-                  <div class="nhsuk-form-group">
-                    <input class="nhsuk-input nhsuk-input--width-20" id="surname" name="surname" type="text">
-                  </div><br>
+              <form action="hee-add-another-trainee-type" method="get" class="form">
+                  <fieldset class="nhsuk-fieldset">
 
-                  <br>
+                    <div class="nhsuk-form-group">
+                      <label class="nhsuk-label" for="input-width-10">
+                        GPhC Number
+                      </label>
+                      <input class="nhsuk-input nhsuk-input--width-10" id="input-width-10" name="test-width-10" type="text">
+                    </div>
+
+                  </fieldset>
+<br><br>
+        <h3>Trainee type: Foundation Pharmacist - 2</h3>
+
+                  <fieldset class="nhsuk-fieldset">
+
+                    <div class="nhsuk-form-group">
+                      <label class="nhsuk-label" for="input-width-10">
+                        GPhC Number
+                      </label>
+                      <input class="nhsuk-input nhsuk-input--width-10" id="input-width-10" name="test-width-10" type="text">
+                    </div>
+
+                  </fieldset>
+<br><br>           
                       <button class="nhsuk-button" type="submit">
                                 Continue
                       </button>
-          </form>       
-      
-
-
+                  
+              </form>  
+                  
     </div>
   </div>
 {% endblock %}
