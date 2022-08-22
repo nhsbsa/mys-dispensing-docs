@@ -596,4 +596,12 @@ router.get(/addAnotherTrainee/, function (req, res) {
   }
 });
 
+router.get(/claimTrainee/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('hee-declaration');
+    } else {
+    res.redirect('hee-trainees');
+  }
+});
+
 module.exports = router;
