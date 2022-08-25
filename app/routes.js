@@ -582,9 +582,9 @@ router.get(/ppcNoteducation/, function (req, res) {
 
 router.get(/addAnotherClaim/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('hee-declaration');
+    res.redirect('hee-confirm-any-more');
     } else {
-    res.redirect('hee-trainee-months');
+    res.redirect('hee-trainees');
   }
 });
 
@@ -593,6 +593,14 @@ router.get(/addAnotherTrainee/, function (req, res) {
     res.redirect('hee-select-trainee-type');
     } else {
     res.redirect('hee-foundation-pharmacist-cya');
+  }
+});
+
+router.get(/addTraineeFour/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('hee-select-trainee-type');
+    } else {
+    res.redirect('hee-trainees-norec');
   }
 });
 
@@ -606,9 +614,17 @@ router.get(/claimTrainee/, function (req, res) {
 
 router.get(/claimOneOff/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
-    res.redirect('hee-declaration');
+    res.redirect('hee-confirm-any-more');
     } else {
     res.redirect('hee-trainees');
+  }
+});
+
+router.get(/addAnyMore/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('hee-trainees');
+    } else {
+    res.redirect('hee-all-trainees-summary');
   }
 });
 
