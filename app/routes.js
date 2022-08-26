@@ -640,7 +640,7 @@ router.get(/claimAnotherMonth/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('hee-any-more-months-q');
     } else {
-    res.redirect('hee-trainees');
+    res.redirect('hee-start-page');
   }
 });
 
