@@ -628,4 +628,20 @@ router.get(/addAnyMore/, function (req, res) {
   }
 });
 
+router.get(/claimMoreMonths/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('hee-start-page');
+    } else {
+    res.redirect('hee-declaration');
+  }
+});
+
+router.get(/claimAnotherMonth/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('hee-any-more-months-q');
+    } else {
+    res.redirect('hee-trainees');
+  }
+});
+
 module.exports = router;
