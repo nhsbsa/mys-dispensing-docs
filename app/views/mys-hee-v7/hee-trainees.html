@@ -48,13 +48,9 @@
                     <div class="nhsuk-grid-row">
                       <div class="nhsuk-grid-column-two-thirds" style="margin-left: 16px">
                           <div style="display: flex; flex-direction: row; align-items: flex-start">
-                            <h2>April 2022 - Trainee(s)</h2>
+                            <h2>April 2022 - Trainees</h2>
 
-<<<<<<< HEAD:app/views/mys-hee-v6/hee-trainees-april.html
-                            <a href="hee-create-trainee" class="nhsuk-button" style="display: block; margin-left: auto; margin-right: 0;">
-=======
                             <!-- <a href="#" class="nhsuk-button" style="display: block; margin-left: auto; margin-right: 0;">
->>>>>>> 072344ef944ea8339d7b1e1866a0d412586e3936:app/views/mys-hee-v6/hee-trainees.html
                             Create trainee
                             </a> -->
                           </div>
@@ -66,7 +62,8 @@
                             <th class="nhsuk-table__header" scope="col"> Trainee Type </th>
                             <th class="nhsuk-table__header" scope="col"> Training Start Date </th>
                             <th class="nhsuk-table__header" scope="col"> Training End Date </th>
-                            <th class="nhsuk-table__header" scope="col"> GPhC Number</th>
+                            <th class="nhsuk-table__header" scope="col"> GPhC No or DOB</th>
+                            <th class="nhsuk-table__header" scope="col"> Status </th>
                           </tr>
                         </thead>
                         
@@ -85,9 +82,23 @@
                               30 Sept 2023
                             </td>
                             <td class="nhsuk-table__cell">
-                              2234567
+                              1234567
                             </td>
                             <td class="nhsuk-table__cell">
+                              <form>
+                                <div class="nhsuk-form-group">
+                                  <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                                    <div class="nhsuk-checkboxes">
+                                      <div class="nhsuk-checkboxes__item">
+                                        <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                                          Claim
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </fieldset>
+                                </div>                      
+                              </form>
                             </td>          
                             
                           </tr>
@@ -106,9 +117,23 @@
                               30 Sept 2023
                             </td>
                             <td class="nhsuk-table__cell">
-                              2876543
+                              8876543
                             </td>
                             <td class="nhsuk-table__cell">
+                              <form>
+                                <div class="nhsuk-form-group">
+                                  <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                                    <div class="nhsuk-checkboxes">
+                                      <div class="nhsuk-checkboxes__item">
+                                        <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                                          Claim
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </fieldset>
+                                </div>                      
+                              </form>
                             </td>          
                           </tr>
 
@@ -126,49 +151,55 @@
                             <td class="nhsuk-table__cell">
                               30 Sept 2023
                             </td>
-                            <td>2563431</td>
+                            <td>01 Jan 2000</td>
 
                             <td class="nhsuk-table__cell">
+                              <form>
+                                <div class="nhsuk-form-group">
+                                  <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                                    <div class="nhsuk-checkboxes">
+                                      <div class="nhsuk-checkboxes__item">
+                                        <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                                          Claim
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </fieldset>
+                                </div>                      
+                              </form>
                             </td>          
                           </tr>
+
+                          <tr class="nhsuk-table__row">
+                            <td class="nhsuk-table__cell">
+                              Dave Smith
+                            </td>
+                            <td class="nhsuk-table__cell">
+                              Pre-registration Trainee Pharmacy Technician (PTPT) 
+                            </td>
+                            
+                            <td class="nhsuk-table__cell">
+                              01 Oct 2020
+                            </td>
+                            <td class="nhsuk-table__cell">
+                              30 Sept 2022
+                            </td>
+                            <td>01 Feb 2021</td>
+                            </td>
+                            <td class="nhsuk-table__cell">
+                            </td>
+                          </tr>
+
                           
                         </tbody>
                       </table>
                       
-                  <h2>Do you want to claim for these trainees?</h2>
-
-                  <div class="nhsuk-form-group">
-                    <form action="claimAnotherMonth"
-                      class="form"
-                      method="get">
-                      <fieldset class="nhsuk-fieldset">
-                  
-                          <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input"
-                                id="claim1"
-                                name="radioInlineGroup"
-                                type="radio"
-                                value="Yes"> <label class="nhsuk-label nhsuk-radios__label"
-                                for="add-another-1">Yes</label>
-                          </div><br>
-
-                          <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input"
-                                id="claim2"
-                                name="radioInlineGroup"
-                                type="radio"
-                                value="No"> <label class="nhsuk-label nhsuk-radios__label"
-                                for="add-another-2">No</b></label>
-                          </div><br>
-
-                      </fieldset>
-                      <br>
-
-                      <button class="nhsuk-button"
-                        type="submit">Continue</button>
-      
-                    </form>
-                  </div>
+                      <form action="hee-confirm-q-trainees" method="post" novalidate>
+                          <button class="nhsuk-button" type="submit">
+                                    Continue
+                          </button>
+                      </form>
 
                     </div>
                 </div>
