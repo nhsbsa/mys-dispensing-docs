@@ -155,6 +155,7 @@
                   </div><br>
                   <div class="nhsuk-form-group">
                     <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+                      <p style="color:red"> Training end date is not known, it's possible that the trainee may leave the pharmacy.</p>
                       <label class="nhsuk-label" for="input-width-20">
                           Training end date
                       </label>
@@ -196,7 +197,9 @@
 
 <br>
                   <div class="nhsuk-form-group">
-                      <p style="color:red"> This will be dynamic text depending what is selected in Trainee Type. <br> For Foundation Pharmacist enter GPhC number, or;<br> for PTPT add the GPhC number for the ES/Lead employer.</p>
+                      <p style="color:red"> The following will be dynamic text depending what is selected in Trainee Type above. <br> 1) For Foundation Pharmacist enter GPhC number, or;<br> 2) for PTPT add the GPhC number for the ES/Lead Employer.
+                      <br><br>However, none of the trainees may not have a GPhC number so in all cases the GPhC may have to be the ES/Lead Employer.
+                      <br><br>Once the GPhC number has been entered functionality to link out to validate and if incorrect an error message will advise with the option to correct will be displayed. If OK, then they can continue. </p>
                     <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
                               GPhC number
                     </label>
