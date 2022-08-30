@@ -628,6 +628,14 @@ router.get(/addAnyMore/, function (req, res) {
   }
 });
 
+router.get(/addAnyExtras/, function (req, res) {
+  if (req.query.radioInlineGroup === "Yes" ) {
+    res.redirect('hee-trainees');
+    } else {
+    res.redirect('hee-trainees');
+  }
+});
+
 router.get(/claimMoreMonths/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('hee-start-page');
