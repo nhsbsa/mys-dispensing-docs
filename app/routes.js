@@ -632,7 +632,7 @@ router.get(/claimMoreMonths/, function (req, res) {
   if (req.query.radioInlineGroup === "Yes" ) {
     res.redirect('hee-start-page');
     } else {
-    res.redirect('hee-declaration');
+    res.redirect('hee-all-trainees-summary');
   }
 });
 
