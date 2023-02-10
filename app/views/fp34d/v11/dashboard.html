@@ -1,0 +1,117 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  High volume vaccinations
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-back-link">
+
+        <a class="nhsuk-back-link__link" href="landing-page">
+          <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+            <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+          </svg>
+          Go back</a>
+      </div>
+
+      <!-- Change the page title here -->
+      <h1>
+        High volume vaccinations submission
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+      <div class="nhsuk-inset-text">
+        <span class="nhsuk-u-visually-hidden">Information: </span>
+        <p>Check the numbers of vaccinations you performed. If these are incorrect, contact your NHS high volume vaccinations IT provider.</p>
+      </div>
+
+      <table role="table" class="nhsuk-table-responsive">
+        <caption class="nhsuk-table__caption">Availiable months</caption>
+        <thead role="rowgroup" class="nhsuk-table__head">
+          <tr role="row">
+            <th role="columnheader" class="" scope="col">
+              Period
+            </th>
+            <th role="columnheader" class="" scope="col">
+              Total vaccinations
+            </th>
+            <th role="columnheader" class="" scope="col">
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody class="nhsuk-table__body">
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">September 2022</span>September 2022
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">150 </span>150
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">View details </span><a class="nhsuk-link" href="september-2022">View details</a>
+            </td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">August 2022</span>August 2022
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">135</span>135
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">View details </span><a class="nhsuk-link" href="">View details</a>
+            </td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">July 2022</span>July 2022
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">144</span>144
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">View details </span><a class="nhsuk-link" href="">View details</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+      <br>
+
+      <a class="nhsuk-button" href="start-submission">Start submission</a>
+
+      <br>
+      <br>
+
+      <h3 class="nhsuk-heading-m">Missed a submission?</h3>
+      <p class="nhsuk-body">Contact the helpdesk on 0300 330 1368 or email <a class="nhsuk-link" href="mailto:nhsbsa.mys@nhs.net">nhsbsa.mys@nhs.net</a> for help</p>
+
+
+<!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}

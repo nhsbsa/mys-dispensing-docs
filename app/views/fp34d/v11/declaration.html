@@ -1,0 +1,200 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+High volume vaccinations
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-back-link">
+
+      <a class="nhsuk-back-link__link" href="start-submission">
+        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+          aria-hidden="true" height="24" width="24">
+          <path
+            d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+          </path>
+        </svg>
+        Go back</a>
+    </div>
+
+    <!-- Change the page title here -->
+    <h1>
+      High volume vaccinations submission
+    </h1>
+    <span class="nhsuk-caption-xl nhsuk-caption--bottom">Declaration</span>
+
+    <!-- Add your content here -->
+    <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+    <hr>
+
+    <table role="table" class="nhsuk-table-responsive">
+      <caption class="nhsuk-table__caption"> </caption>
+      <thead role="rowgroup" class="nhsuk-table__head">
+        <tr role="row">
+          <th role="columnheader" class="" scope="col">
+            Period
+          </th>
+          <th role="columnheader" class="" scope="col">
+            Total vaccinations
+          </th>
+          <th role="columnheader" class="" scope="col">
+
+          </th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">September 2022</span>September 2022
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">150 </span>150
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">View details </span><a class="nhsuk-link"
+              href="september-2022">View details</a>
+          </td>
+        </tr>
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">August 2022</span>August 2022
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">135</span>135
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">View details </span><a class="nhsuk-link" href="">View
+              details</a>
+          </td>
+        </tr>
+        <!-- <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">July 2022</span>July 2022
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">144</span>144
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">View details </span><a class="nhsuk-link" href="">View details</a>
+            </td>
+          </tr> -->
+      </tbody>
+    </table>
+
+    <br>
+
+
+    <div class="nhsuk-grid-column-one-third">
+      <h2 class="heading-small" style="margin-top:20px;">Declaration</h2>
+    </div>
+    <div class="nhsuk-grid-column-two-thirds">
+      <div class="declaration">
+        <br>
+        <ol>
+          <li style="margin-left:40px; padding-bottom:10px;">I confirm that the information provided within this
+            submission is correct and accurate. </li>
+
+          <li style="margin-left:40px; padding-bottom:10px;">I confirm that my acceptance of the declaration shall act
+            as my electronic signature.</li>
+
+          <!--
+                                 <li style="margin-left:40px; padding-bottom:10px;">I confirm that my name below shall act as my electronic signature.</li>-->
+        </ol>
+      </div>
+      <fieldset>
+        <legend class="visually-hidden">New Submission</legend>
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="input-width-10">
+            First name
+          </label>
+          <input class="nhsuk-input nhsuk-input--width-10" id="first-name" name="first-name" type="text">
+        </div>
+
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="input-width-10">
+            Last name
+          </label>
+          <input class="nhsuk-input nhsuk-input--width-10" id="last-name" name="last-name" type="text">
+        </div>
+
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <p>A confirmation email will be sent to FAAAA@nhs.net.
+            <br>
+            <br>
+            If you would like a copy sent to another email address, please enter it below.
+          </p>
+        </div>
+
+
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="email-with-hint-text">
+            Email address (optional)
+          </label>
+          <!-- <div class="nhsuk-hint" id="email-with-hint-text-hint">
+            <span id="emailHint" class="panel panel-border-narrow">
+              A confirmation email will be sent to <span class="strong">joe.bloggs@nhs.net</span>.
+              If you would like a copy sent to another email address, please enter it below.
+            </span>
+          </div> -->
+          <input class="nhsuk-input nhsuk-input--width-20" id="email" name="email" type="text"
+            aria-describedby="email-with-hint-text-hint">
+        </div>
+
+        <br>
+
+        <div class="nhsuk-form-group">
+          <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+            <div class="nhsuk-checkboxes">
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="agree-check" name="agree-check" type="checkbox"
+                  value="agree-check" aria-expanded="false">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="agree-check">
+                  I agree and accept this declaration
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <br>
+
+        <div class="form-group">
+          <a href="done" class="nhsuk-button">
+            Submit
+          </a>
+        </div>
+
+      </fieldset>
+    </div>
+    <!-- End of content -->
+
+  </div>
+</div>
+
+
+<!-- End of content -->
+
+</div>
+</div>
+{% endblock %}
